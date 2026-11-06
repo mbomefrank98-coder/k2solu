@@ -12,23 +12,23 @@ import WhatsAppButton from "@/components/common/WhatsAppButton";
 import AuthProvider from "@/components/auth/AuthProvider";
 import CartProvider from "@/components/cart/CartProvider";
 
-const BASE_URL = process.env.NEXT_PUBLIC_BASE_URL || 'https://k2liquidstore.com';
+const BASE_URL = process.env.NEXT_PUBLIC_BASE_URL || 'https://k2solutionpro.com';
 
 export const metadata = {
   metadataBase: new URL(BASE_URL),
   title: {
-    default: 'K2LiquidStore | K2 Paper, Liquid Spray, Powder, Etomidate & K-Pods',
-    template: '%s | K2LiquidStore',
+    default: 'K2SolutionPro | K2 Paper, Liquid Spray, Powder, Etomidate & K-Pods',
+    template: '%s | K2SolutionPro',
   },
-  description: 'Buy K2 paper sheets, K2 liquid spray, cannabinoid K2 powder, research-grade etomidate, vapes and K-Pods online at K2LiquidStore.com. Premium quality and discreet worldwide shipping.',
+  description: 'Buy K2 paper sheets, K2 liquid spray, cannabinoid K2 powder, research-grade etomidate, vapes and K-Pods online at K2SolutionPro.com. Premium quality and discreet worldwide shipping.',
   keywords: [
     'k2 paper sheets', 'k2 paper', 'k2 liquid spray', 'k2 spray', 'k2 powder',
     'cannabinoids k2 powder', 'k2 spice', 'k2 spice paper',
     'etomidate', 'etomidate powder', 'etomidate for sale', 'buy etomidate',
     'etomidate vape', 'k-pods', 'etomidate k-pods', 'vape pods',
-    'buy k2 online', 'k2 for sale', 'k2liquidstore',
+    'buy k2 online', 'k2 for sale', 'k2solutionpro',
   ],
-  other: { 'theme-color': '#0c0a2a' },
+  other: { 'theme-color': '#1a2634' },
   robots: {
     index: true,
     follow: true,
@@ -44,21 +44,21 @@ export const metadata = {
     type: 'website',
     locale: 'en_US',
     url: BASE_URL,
-    siteName: 'K2LiquidStore',
-    title: 'K2LiquidStore | K2 Paper, Liquid Spray, Powder, Etomidate & K-Pods',
+    siteName: 'K2SolutionPro',
+    title: 'K2SolutionPro | K2 Paper, Liquid Spray, Powder, Etomidate & K-Pods',
     description: 'Premium K2 paper sheets, K2 liquid spray, K2 powder, research-grade etomidate and K-Pods. Worldwide discreet shipping.',
     images: [
       {
         url: `${BASE_URL}/images/logo.png`,
         width: 1200,
         height: 630,
-        alt: 'K2LiquidStore — K2 Paper, Spray, Powder, Etomidate & K-Pods',
+        alt: 'K2SolutionPro — K2 Paper, Spray, Powder, Etomidate & K-Pods',
       },
     ],
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'K2LiquidStore | K2 Paper, Liquid Spray, Powder, Etomidate & K-Pods',
+    title: 'K2SolutionPro | K2 Paper, Liquid Spray, Powder, Etomidate & K-Pods',
     description: 'Premium K2 paper sheets, K2 liquid spray, K2 powder, research-grade etomidate and K-Pods. Worldwide discreet shipping.',
     images: [`${BASE_URL}/images/logo.png`],
   },
@@ -92,14 +92,14 @@ export default function RootLayout({ children }) {
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
         <link
-          href="https://fonts.googleapis.com/css2?family=Syne:wght@600;700;800&family=DM+Sans:opsz,wght@9..40,400;9..40,500;9..40,600;9..40,700&family=JetBrains+Mono:wght@400;500;600&display=swap"
+          href="https://fonts.googleapis.com/css2?family=Sora:wght@500;600;700;800&family=Manrope:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;600&display=swap"
           rel="stylesheet"
         />
       </head>
       <body className="font-sans min-h-screen flex flex-col">
         <a
           href="#main-content"
-          className="sr-only focus:not-sr-only focus:absolute focus:top-4 focus:left-4 focus:z-[100] focus:bg-volt focus:text-volt-ink focus:px-4 focus:py-2 focus:font-mono focus:text-xs focus:uppercase"
+          className="sr-only focus:not-sr-only focus:absolute focus:top-4 focus:left-4 focus:z-[100] focus:rounded-full focus:bg-volt focus:text-volt-ink focus:px-4 focus:py-2 focus:text-sm focus:font-semibold"
         >
           Skip to main content
         </a>
@@ -110,9 +110,9 @@ export default function RootLayout({ children }) {
             <Toaster
               position="bottom-center"
               toastOptions={{
-                style: { background: '#161244', color: '#f2f2ee', border: '1px solid #332c78', borderRadius: 0, fontSize: 13 },
-                success: { iconTheme: { primary: '#d8ff3c', secondary: '#1a2200' } },
-                error: { iconTheme: { primary: '#ff6a2b', secondary: '#07061c' } },
+                style: { background: '#22303f', color: '#eef3f7', border: '1px solid #3e5468', borderRadius: 14, fontSize: 13 },
+                success: { iconTheme: { primary: '#3fe0cf', secondary: '#07202a' } },
+                error: { iconTheme: { primary: '#ff8a5b', secondary: '#141d28' } },
               }}
             />
             <WhatsAppButton />

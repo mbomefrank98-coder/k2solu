@@ -3,12 +3,12 @@
 import Link from 'next/link';
 import { useState } from 'react';
 import { FaWhatsapp, FaBitcoin } from 'react-icons/fa';
-import { HiOutlineArrowRight, HiOutlineArrowUpRight } from 'react-icons/hi2';
-import { LogoMark } from '@/components/common/Logo';
+import { HiOutlineArrowUpRight, HiOutlineEnvelope, HiOutlineShieldCheck, HiOutlineTruck } from 'react-icons/hi2';
+import Logo, { LogoMark } from '@/components/common/Logo';
 
 const columns = [
   {
-    title: 'Catalog',
+    title: 'Shop',
     links: [
       { href: '/products', label: 'All products' },
       { href: '/products?category=k2-paper-sheets', label: 'K2 Paper Sheets' },
@@ -21,8 +21,9 @@ const columns = [
   {
     title: 'Company',
     links: [
-      { href: '/about', label: 'About' },
+      { href: '/about', label: 'About us' },
       { href: '/faq', label: 'FAQ' },
+      { href: '/contact', label: 'Contact' },
       { href: '/shipping', label: 'Shipping' },
       { href: '/refund', label: 'Refunds' },
     ],
@@ -30,8 +31,8 @@ const columns = [
   {
     title: 'Legal',
     links: [
-      { href: '/terms', label: 'Terms' },
-      { href: '/privacy', label: 'Privacy' },
+      { href: '/terms', label: 'Terms of service' },
+      { href: '/privacy', label: 'Privacy policy' },
     ],
   },
 ];
@@ -48,94 +49,81 @@ export default function Footer() {
   };
 
   return (
-    <footer className="border-t border-line bg-night-950 mt-24">
-      {/* Top: newsletter + contact */}
-      <div className="wrap">
-        <div className="grid lg:grid-cols-2 border-x border-line divide-y lg:divide-y-0 lg:divide-x divide-line">
-          <div className="p-8 lg:p-12">
+    <footer className="relative mt-28 overflow-hidden">
+      {/* Glow */}
+      <div aria-hidden className="pointer-events-none absolute inset-x-0 top-0 h-px bg-gradient-to-r from-transparent via-volt/60 to-transparent" />
+      <div aria-hidden className="pointer-events-none absolute -bottom-40 left-1/2 h-[420px] w-[900px] -translate-x-1/2 rounded-full bg-ocean/15 blur-3xl" />
+
+      <div className="wrap relative pt-16">
+        {/* Newsletter card */}
+        <div className="relative overflow-hidden rounded-3xl border border-line bg-night-800/70 backdrop-blur-sm p-8 lg:p-12 grid lg:grid-cols-[1.2fr_1fr] gap-10 items-center shadow-card">
+          <div aria-hidden className="pointer-events-none absolute -right-20 -top-24 opacity-[0.08]">
+            <LogoMark size={420} />
+          </div>
+          <div className="relative">
             <p className="tag mb-5">Restock alerts</p>
-            <h3 className="h-display text-3xl lg:text-4xl mb-4">New batches,<br />one email.</h3>
-            <p className="text-bone-muted text-sm max-w-sm mb-8">No marketing noise. One short message when fresh stock lands.</p>
-            <form onSubmit={subscribe} className="flex max-w-md border border-line focus-within:border-volt transition-colors">
-              <input
-                type="email"
-                required
-                value={email}
-                onChange={(e) => setEmail(e.target.value)}
-                placeholder="you@domain.com"
-                className="flex-1 min-w-0 bg-transparent px-4 py-3.5 text-sm text-bone outline-none"
-              />
-              <button type="submit" disabled={status !== 'idle'} className="px-5 bg-volt text-volt-ink font-mono text-[12px] uppercase tracking-[0.14em] font-semibold hover:bg-bone transition-colors disabled:opacity-70">
-                {status === 'done' ? 'Added' : status === 'loading' ? '...' : 'Join'}
-              </button>
-            </form>
+            <h3 className="h-display text-3xl lg:text-4xl mb-3">New batches. <span className="gradient-text">One email.</span></h3>
+            <p className="text-bone-muted text-sm max-w-md">No marketing noise — one short message when fresh stock lands or a new format is released.</p>
+          </div>
+          <form onSubmit={subscribe} className="relative flex items-center rounded-full border border-line bg-night-900/80 p-1.5 focus-within:border-volt/60 focus-within:shadow-glow-sm transition-all">
+            <HiOutlineEnvelope className="ml-4 text-bone-faint shrink-0" size={18} />
+            <input
+              type="email"
+              required
+              value={email}
+              onChange={(e) => setEmail(e.target.value)}
+              placeholder="you@domain.com"
+              className="flex-1 min-w-0 bg-transparent px-3 py-2.5 text-sm text-bone outline-none"
+            />
+            <button type="submit" disabled={status !== 'idle'} className="btn-volt !py-2.5 !px-5 disabled:opacity-70">
+              {status === 'done' ? 'Added' : status === 'loading' ? '…' : 'Subscribe'}
+            </button>
+          </form>
+        </div>
+
+        {/* Columns */}
+        <div className="grid grid-cols-2 md:grid-cols-6 gap-10 py-16">
+          <div className="col-span-2">
+            <Logo size={40} showDomain={false} />
+            <p className="text-bone-muted text-sm leading-relaxed mt-5 max-w-xs">
+              K2 paper, liquid spray, powder, etomidate and K-Pods. Batch-checked, plain-packaged and tracked to 50+ countries.
+            </p>
+            <div className="mt-6 flex gap-2">
+              <a href="https://wa.me/17406027691" target="_blank" rel="noopener noreferrer" aria-label="WhatsApp" className="h-10 w-10 grid place-items-center rounded-full border border-line text-bone-muted hover:text-volt hover:border-volt/60 transition-colors"><FaWhatsapp size={17} /></a>
+              <a href="mailto:order@k2solutionpro.com?subject=Order%20request" aria-label="Email" className="h-10 w-10 grid place-items-center rounded-full border border-line text-bone-muted hover:text-volt hover:border-volt/60 transition-colors"><HiOutlineEnvelope size={17} /></a>
+            </div>
           </div>
 
-          <div className="p-8 lg:p-12 grid gap-6">
-            <a href="https://wa.me/15125922145" target="_blank" rel="noopener noreferrer" className="group cell cell-hover p-5 flex flex-col justify-between min-h-[140px]">
-              <FaWhatsapp className="text-volt text-xl" />
-              <div>
-                <p className="font-mono text-[11px] uppercase tracking-[0.16em] text-bone-faint">WhatsApp</p>
-                <p className="text-bone font-semibold mt-1 flex items-center gap-2">+1 512-592-2145 <HiOutlineArrowUpRight className="text-bone-faint group-hover:text-volt" size={14} /></p>
-              </div>
-            </a>
-            <div className="border border-line p-5 flex items-center gap-4">
-              <FaBitcoin className="text-signal text-2xl shrink-0" />
-              <div>
-                <p className="font-mono text-[11px] uppercase tracking-[0.16em] text-bone-faint">Payment</p>
-                <p className="text-bone text-sm font-semibold">Bitcoin (BTC) only &middot; address sent after order request</p>
-              </div>
+          {columns.map(({ title, links }) => (
+            <div key={title} className={title === 'Shop' ? 'col-span-1 md:col-span-1' : ''}>
+              <p className="font-display font-semibold text-bone text-sm mb-4">{title}</p>
+              <ul className="space-y-2.5">
+                {links.map(({ href, label }) => (
+                  <li key={href}>
+                    <Link href={href} className="text-sm text-bone-muted hover:text-volt transition-colors">{label}</Link>
+                  </li>
+                ))}
+              </ul>
             </div>
+          ))}
+
+          <div className="col-span-2 md:col-span-1">
+            <p className="font-display font-semibold text-bone text-sm mb-4">Trust</p>
+            <ul className="space-y-3 text-sm text-bone-muted">
+              <li className="flex items-start gap-2.5"><HiOutlineShieldCheck className="text-volt mt-0.5 shrink-0" size={16} /> Discreet, scent-proof packaging</li>
+              <li className="flex items-start gap-2.5"><HiOutlineTruck className="text-volt mt-0.5 shrink-0" size={16} /> Tracked worldwide delivery</li>
+              <li className="flex items-start gap-2.5"><FaBitcoin className="text-signal mt-0.5 shrink-0" size={15} /> Bitcoin (BTC) &amp; Apple Pay</li>
+            </ul>
           </div>
         </div>
       </div>
 
-      {/* Sitemap */}
-      <div className="border-y border-line">
-        <div className="wrap">
-          <div className="grid grid-cols-2 md:grid-cols-4 border-x border-line divide-x divide-line">
-            <div className="p-6 lg:p-8 col-span-2 md:col-span-1">
-              <LogoMark size={44} />
-              <p className="text-bone-faint text-xs leading-relaxed mt-5 max-w-[200px]">
-                K2 paper, liquid spray, powder, etomidate and K-Pods. Batch-checked. Plain packaging. 50+ countries.
-              </p>
-            </div>
-            {columns.map(({ title, links }) => (
-              <div key={title} className="p-6 lg:p-8">
-                <p className="tag-plain text-volt mb-5">{title}</p>
-                <ul className="space-y-2.5">
-                  {links.map(({ href, label }) => (
-                    <li key={href}>
-                      <Link href={href} className="group inline-flex items-center gap-2 text-sm text-bone-muted hover:text-bone transition-colors">
-                        <HiOutlineArrowRight size={12} className="text-bone-faint -ml-5 opacity-0 group-hover:opacity-100 group-hover:ml-0 group-hover:text-volt transition-all" />
-                        {label}
-                      </Link>
-                    </li>
-                  ))}
-                </ul>
-              </div>
-            ))}
-          </div>
-        </div>
-      </div>
-
-      {/* Giant wordmark */}
-      <div className="wrap overflow-hidden">
-        <p
-          className="font-display font-extrabold uppercase leading-none tracking-[-0.05em] text-center select-none outline-text pt-10 -mb-3 whitespace-nowrap"
-          style={{ fontSize: 'clamp(2.4rem, 10.5vw, 11rem)' }}
-          aria-hidden
-        >
-          K2LiquidStore
-        </p>
-      </div>
-
-      {/* Bottom */}
-      <div className="border-t border-line">
-        <div className="wrap h-14 flex items-center justify-between font-mono text-[11px] uppercase tracking-[0.14em] text-bone-faint">
-          <p>&copy; {new Date().getFullYear()} K2LiquidStore</p>
-          <p className="hidden sm:flex items-center gap-2"><span className="status-dot" /> Systems nominal</p>
-          <p>Research use only</p>
+      {/* Bottom bar */}
+      <div className="border-t border-line/70">
+        <div className="wrap py-6 flex flex-col sm:flex-row items-center justify-between gap-3 text-[12px] text-bone-faint">
+          <p>&copy; {new Date().getFullYear()} K2SolutionPro &middot; k2solutionpro.com</p>
+          <p className="flex items-center gap-2"><span className="status-dot animate-pulse2" /> All systems operational</p>
+          <p className="flex items-center gap-1.5">Research use only <HiOutlineArrowUpRight size={12} className="opacity-50" /></p>
         </div>
       </div>
     </footer>

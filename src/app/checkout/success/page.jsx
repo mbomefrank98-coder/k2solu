@@ -111,7 +111,7 @@ function CheckoutSuccessContent() {
                   </div>
                   <div>
                     <p className="text-sm font-medium text-bone">Status updates</p>
-                    <p className="mt-0.5 text-xs text-bone-muted">You will receive updates on WhatsApp or Telegram as your order progresses.</p>
+                    <p className="mt-0.5 text-xs text-bone-muted">You will receive updates on WhatsApp or by email as your order progresses.</p>
                   </div>
                 </div>
               </div>

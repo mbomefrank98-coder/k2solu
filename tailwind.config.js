@@ -8,48 +8,54 @@ module.exports = {
   theme: {
     extend: {
       colors: {
-        // "Obsidian Grid" theme — near-black surfaces, acid-lime accent, orange signal
+        // "Orbital" theme — slate-navy surfaces (from the logo), teal→blue gradient accent, warm coral signal
         night: {
-          950: '#07061c',
-          900: '#0c0a2a',
-          800: '#100d36',
-          700: '#161244',
-          600: '#1d1856',
-          500: '#28226c',
-          400: '#373087',
+          950: '#141d28',
+          900: '#1a2634',
+          800: '#22303f',
+          700: '#2b3a4e',
+          600: '#34465c',
+          500: '#3f556d',
+          400: '#4f6a85',
         },
         line: {
-          DEFAULT: '#231e5a',
-          strong: '#332c78',
+          DEFAULT: '#2f4154',
+          strong: '#3e5468',
         },
+        // teal accent (kept under the legacy `volt` name so existing pages re-theme)
         volt: {
-          DEFAULT: '#d8ff3c',
-          dim: '#b8dc2a',
-          deep: '#8fb11a',
-          ink: '#1a2200',
+          DEFAULT: '#3fe0cf',
+          dim: '#28b8c9',
+          deep: '#1a8f9a',
+          ink: '#07202a',
+        },
+        ocean: {
+          DEFAULT: '#2a9be3',
+          dim: '#1e7fd8',
+          deep: '#1558b8',
         },
         signal: {
-          DEFAULT: '#ff6a2b',
-          dim: '#d9541c',
+          DEFAULT: '#ff8a5b',
+          dim: '#e8704a',
         },
         bone: {
-          DEFAULT: '#f2f2ee',
-          muted: '#a3a3ad',
-          faint: '#6b6b78',
+          DEFAULT: '#eef3f7',
+          muted: '#a7b7c7',
+          faint: '#6e8396',
         },
         primary: {
-          DEFAULT: '#d8ff3c',
-          dark: '#b8dc2a',
-          light: '#e9ff86',
+          DEFAULT: '#3fe0cf',
+          dark: '#28b8c9',
+          light: '#8ef0e5',
         },
         accent: {
-          DEFAULT: '#ff6a2b',
-          dark: '#d9541c',
-          light: '#ff9466',
+          DEFAULT: '#2a9be3',
+          dark: '#1e7fd8',
+          light: '#6dbdf0',
         },
         secondary: {
-          DEFAULT: '#161244',
-          dark: '#0c0a2a',
+          DEFAULT: '#2b3a4e',
+          dark: '#1a2634',
         },
       },
       fontFamily: {
@@ -59,47 +65,69 @@ module.exports = {
       },
       borderRadius: {
         none: '0',
-        sm: '2px',
-        DEFAULT: '2px',
-        md: '2px',
-        lg: '4px',
-        xl: '4px',
-        '2xl': '6px',
-        '3xl': '8px',
+        sm: '6px',
+        DEFAULT: '10px',
+        md: '12px',
+        lg: '16px',
+        xl: '20px',
+        '2xl': '24px',
+        '3xl': '32px',
+      },
+      backgroundImage: {
+        'brand-gradient': 'linear-gradient(135deg, #3fe0cf 0%, #28b8c9 45%, #1e7fd8 100%)',
+        'brand-gradient-soft': 'linear-gradient(135deg, rgba(63,224,207,0.18) 0%, rgba(30,127,216,0.18) 100%)',
+        'grid-faint': 'linear-gradient(rgba(238,243,247,0.04) 1px, transparent 1px), linear-gradient(90deg, rgba(238,243,247,0.04) 1px, transparent 1px)',
       },
       boxShadow: {
-        volt: '0 0 0 1px #d8ff3c, 6px 6px 0 0 #d8ff3c',
-        hard: '6px 6px 0 0 #d8ff3c',
-        'hard-sm': '3px 3px 0 0 #d8ff3c',
-        'hard-white': '6px 6px 0 0 #f2f2ee',
-        navy: '0 20px 60px -20px rgba(7, 6, 28, 0.9)',
+        glow: '0 0 0 1px rgba(63,224,207,0.35), 0 12px 40px -12px rgba(63,224,207,0.45)',
+        'glow-sm': '0 0 0 1px rgba(63,224,207,0.3), 0 6px 20px -8px rgba(63,224,207,0.4)',
+        'glow-blue': '0 12px 40px -12px rgba(42,155,227,0.55)',
+        card: '0 1px 0 0 rgba(255,255,255,0.03) inset, 0 20px 50px -30px rgba(0,0,0,0.7)',
+        navy: '0 24px 60px -24px rgba(10, 16, 24, 0.9)',
+        // legacy aliases
+        volt: '0 0 0 1px rgba(63,224,207,0.35), 0 12px 40px -12px rgba(63,224,207,0.45)',
+        hard: '0 12px 40px -12px rgba(63,224,207,0.45)',
+        'hard-sm': '0 6px 20px -8px rgba(63,224,207,0.4)',
+        'hard-white': '0 12px 40px -12px rgba(238,243,247,0.3)',
       },
       animation: {
         ticker: 'ticker 40s linear infinite',
-        'scan': 'scan 6s linear infinite',
-        'blink': 'blink 1.2s steps(2, start) infinite',
-        'rise': 'rise 0.6s cubic-bezier(0.22, 1, 0.36, 1) both',
+        orbit: 'orbit 18s linear infinite',
+        'orbit-rev': 'orbit 26s linear infinite reverse',
+        float: 'float 7s ease-in-out infinite',
+        pulse2: 'pulse2 2.4s ease-in-out infinite',
+        rise: 'rise 0.6s cubic-bezier(0.22, 1, 0.36, 1) both',
+        blink: 'blink 1.2s steps(2, start) infinite',
+        scan: 'scan 6s linear infinite',
       },
       keyframes: {
         ticker: {
           '0%': { transform: 'translateX(0)' },
           '100%': { transform: 'translateX(-50%)' },
         },
-        scan: {
-          '0%': { transform: 'translateY(-100%)' },
-          '100%': { transform: 'translateY(100vh)' },
+        orbit: {
+          '0%': { transform: 'rotate(0deg)' },
+          '100%': { transform: 'rotate(360deg)' },
         },
-        blink: {
-          to: { visibility: 'hidden' },
+        float: {
+          '0%, 100%': { transform: 'translateY(0)' },
+          '50%': { transform: 'translateY(-14px)' },
+        },
+        pulse2: {
+          '0%, 100%': { opacity: '1', transform: 'scale(1)' },
+          '50%': { opacity: '0.55', transform: 'scale(0.85)' },
         },
         rise: {
           from: { opacity: '0', transform: 'translateY(18px)' },
           to: { opacity: '1', transform: 'translateY(0)' },
         },
+        blink: { to: { visibility: 'hidden' } },
+        scan: {
+          '0%': { transform: 'translateY(-100%)' },
+          '100%': { transform: 'translateY(100vh)' },
+        },
       },
     },
   },
-  plugins: [
-    require('@tailwindcss/forms'),
-  ],
-}
+  plugins: [require('@tailwindcss/forms')],
+};

@@ -1,0 +1,1528 @@
+[
+  {
+    "slug": "etomidate-vape-k-pod-classic",
+    "category": "vapes-kpods",
+    "countInStock": 100,
+    "description": "The Classic K-Pod represents the foundation of our vape lineup. Each pod contains pharmaceutical-grade etomidate formulated specifically for vaporization, delivering consistent potency with every use.\n\nEngineered with medical-grade materials and precision manufacturing, the Classic K-Pod offers reliable performance and exceptional purity. The compact design makes it perfect for discreet use while maintaining the highest standards of quality.\n\nCompatible with all standard K-Pod devices. Each pod is individually sealed to preserve freshness and potency until ready for use.\n\nSpecifications:\n- CAS Number: 33125-97-2\n- Purity: ≥99.8% (HPLC verified)\n- Form: Pre-filled vape cartridge (K-Pod)\n- Compatibility: Universal K-Pod devices\n- Capacity: 1.0ml per pod\n- Material: Medical-grade stainless steel and glass\n- Leak-resistant design\n- Batch-coded for traceability",
+    "featured": false,
+    "images": [
+      "/images/vapes/etomidate-vape-k-pod-classic.jpg"
+    ],
+    "name": "Etomidate Vape K-Pod Classic",
+    "numReviews": 5,
+    "price": 350,
+    "priceVariants": [
+      {
+        "quantity": 50,
+        "label": "50 Pods",
+        "price": 350
+      },
+      {
+        "quantity": 100,
+        "label": "100 Pods",
+        "price": 550
+      },
+      {
+        "quantity": 200,
+        "label": "200 Pods",
+        "price": 850
+      }
+    ],
+    "rating": 4.4,
+    "createdAt": "2026-10-30T15:38:54.158Z",
+    "updatedAt": "2026-10-30T15:38:54.158Z"
+  },
+  {
+    "slug": "zombie-vape",
+    "category": "vapes-kpods",
+    "countInStock": 100,
+    "description": "$14",
+    "featured": false,
+    "images": [
+      "/images/vapes/zombie-vape.jpg"
+    ],
+    "name": "Zombie Vape",
+    "numReviews": 5,
+    "price": 350,
+    "priceVariants": [
+      {
+        "quantity": 50,
+        "label": "50 Pods",
+        "price": 350
+      },
+      {
+        "quantity": 100,
+        "label": "100 Pods",
+        "price": 550
+      },
+      {
+        "quantity": 200,
+        "label": "200 Pods",
+        "price": 850
+      }
+    ],
+    "rating": 5,
+    "createdAt": "2026-10-30T15:38:54.158Z",
+    "updatedAt": "2026-10-30T15:38:54.158Z"
+  },
+  {
+    "slug": "etomidate-vape-kpod-max",
+    "category": "vapes-kpods",
+    "countInStock": 100,
+    "description": "The Max K-Pod is designed for users who demand extended usage between replacements. With 2.0ml capacity — double the standard size — each pod provides twice the usage time while maintaining portability.\n\nFeatures our most advanced ceramic coil technology for optimal heat distribution and consistent vapor quality from first draw to last. The enlarged reservoir is made from upgraded borosilicate glass for superior chemical resistance.\n\nDespite the larger capacity, the Max maintains compatibility with all standard K-Pod devices. The extended capacity means fewer replacements and better value for regular users.\n\nSpecifications:\n- CAS Number: 33125-97-2\n- Purity: ≥99.8% (HPLC verified)\n- Form: High-capacity pre-filled cartridge\n- Capacity: 2.0ml per pod (2x standard)\n- Compatibility: Universal K-Pod devices\n- Coil: Advanced ceramic heating element\n- Reservoir: Upgraded borosilicate glass\n- Optimized for extended usage cycles",
+    "featured": false,
+    "images": [
+      "/images/vapes/etomidate-vape-kpod-max.jpg"
+    ],
+    "name": "Etomidate Vape K-Pod Max",
+    "numReviews": 5,
+    "price": 349,
+    "priceVariants": [
+      {
+        "quantity": 50,
+        "label": "50 Pods",
+        "price": 350
+      },
+      {
+        "quantity": 100,
+        "label": "100 Pods",
+        "price": 550
+      },
+      {
+        "quantity": 200,
+        "label": "200 Pods",
+        "price": 850
+      }
+    ],
+    "rating": 4.6,
+    "createdAt": "2026-10-30T15:38:54.158Z",
+    "updatedAt": "2026-10-30T15:38:54.158Z"
+  },
+  {
+    "slug": "etomidate-vape-starter-kit",
+    "category": "vapes-kpods",
+    "countInStock": 100,
+    "description": "The Starter Kit is the perfect introduction to our etomidate vape products. Each kit includes a premium rechargeable device and a selection of our most popular K-Pod varieties.\n\nThe included device features variable voltage settings, allowing you to customize your experience from smooth and subtle to more pronounced effects. The long-lasting battery provides all-day use on a single charge, with USB-C fast charging.\n\nAlso includes a carrying case, cleaning accessories, and detailed usage instructions. Everything you need to begin your journey with confidence and convenience.\n\nSpecifications:\n- CAS Number: 33125-97-2\n- Purity: ≥99.8% (HPLC verified)\n- Device: Premium rechargeable vape mod\n- Battery: 1000mAh lithium-ion\n- Charging: USB-C fast charge\n- Settings: 3 voltage levels\n- Kit Contents: Device + 5 mixed K-Pods + Case + Accessories\n- Warranty: 90-day device warranty",
+    "featured": false,
+    "images": [
+      "/images/vapes/etomidate-vape-starter-kit.jpg"
+    ],
+    "name": "Etomidate Vape Starter Kit",
+    "numReviews": 5,
+    "price": 350,
+    "priceVariants": [
+      {
+        "quantity": 50,
+        "label": "50 Pods",
+        "price": 350
+      },
+      {
+        "quantity": 100,
+        "label": "100 Pods",
+        "price": 550
+      },
+      {
+        "quantity": 200,
+        "label": "200 Pods",
+        "price": 850
+      }
+    ],
+    "rating": 5,
+    "createdAt": "2026-10-30T15:38:54.158Z",
+    "updatedAt": "2026-10-30T15:38:54.158Z"
+  },
+  {
+    "slug": "etomidate-vape-kpod-strong",
+    "category": "vapes-kpods",
+    "countInStock": 100,
+    "description": "The Menthol K-Pod combines our pharmaceutical-grade etomidate with premium menthol crystals for a refreshing, cooling experience. The menthol is carefully sourced and purified to pharmaceutical standards. The formulation is balanced to ensure the menthol enhances rather than masks the etomidate's properties. Each puff delivers a crisp, clean sensation with smooth vapor production thanks to our advanced wicking system. Popular among users who prefer a cooling, minty experience. The menthol can also help soothe the throat during use.\n\nSpecifications:\n- CAS Number: 33125-97-2\n- Purity: ≥99.8% (HPLC verified)\n- Form: Enhanced pre-filled vape cartridge\n- Potency: 2x concentration (Classic formula)\n- Compatibility: Universal K-Pod devices\n- Capacity: 1.0ml per pod\n- Advanced ceramic coil technology\n- Enhanced quality control testing",
+    "featured": false,
+    "images": [
+      "/images/vapes/etomidate-vape-kpod-strong.jpg"
+    ],
+    "name": "Etomidate Vape K-Pod Menthol",
+    "numReviews": 5,
+    "price": 350,
+    "priceVariants": [
+      {
+        "quantity": 50,
+        "label": "50 Pods",
+        "price": 350
+      },
+      {
+        "quantity": 100,
+        "label": "100 Pods",
+        "price": 550
+      },
+      {
+        "quantity": 200,
+        "label": "200 Pods",
+        "price": 850
+      }
+    ],
+    "rating": 4.6,
+    "createdAt": "2026-10-30T15:38:54.158Z",
+    "updatedAt": "2026-10-30T15:38:54.158Z"
+  },
+  {
+    "slug": "etomidate-space-oil",
+    "category": "vapes-kpods",
+    "countInStock": 100,
+    "description": "$15",
+    "featured": false,
+    "images": [
+      "/images/vapes/etomidate-space-oil.jpg"
+    ],
+    "name": "Space Oil",
+    "numReviews": 5,
+    "price": 500,
+    "priceVariants": [
+      {
+        "quantity": 100,
+        "label": "100ml",
+        "price": 500
+      },
+      {
+        "quantity": 250,
+        "label": "250ml",
+        "price": 1250
+      },
+      {
+        "quantity": 500,
+        "label": "500ml",
+        "price": 2500
+      },
+      {
+        "quantity": 1000,
+        "label": "1000ml",
+        "price": 5000
+      }
+    ],
+    "rating": 5,
+    "createdAt": "2026-10-30T15:38:54.158Z",
+    "updatedAt": "2026-10-30T15:38:54.158Z"
+  },
+  {
+    "slug": "piao-piao-vape",
+    "category": "vapes-kpods",
+    "countInStock": 100,
+    "description": "$16",
+    "featured": false,
+    "images": [
+      "/images/vapes/piao-piao-vape.jpg"
+    ],
+    "name": "Piao Piao Vape",
+    "numReviews": 5,
+    "price": 350,
+    "priceVariants": [
+      {
+        "quantity": 50,
+        "label": "50 Pods",
+        "price": 350
+      },
+      {
+        "quantity": 100,
+        "label": "100 Pods",
+        "price": 550
+      },
+      {
+        "quantity": 200,
+        "label": "200 Pods",
+        "price": 850
+      }
+    ],
+    "rating": 5,
+    "createdAt": "2026-10-30T15:38:54.158Z",
+    "updatedAt": "2026-10-30T15:38:54.158Z"
+  },
+  {
+    "slug": "etomidate-vape-disposable-mini",
+    "category": "vapes-kpods",
+    "countInStock": 100,
+    "description": "The Disposable Mini offers ultimate convenience in a ready-to-use format. No charging, no refilling, no maintenance — simply use and dispose responsibly when finished.\n\nEach disposable unit contains the same pharmaceutical-grade etomidate as our K-Pods, sealed in a compact all-in-one device. The integrated battery is calibrated for optimal vaporization of our specific formulation.\n\nPerfect for travel, sampling, or situations where carrying a separate device is impractical. The discreet form factor and silent operation make it ideal for on-the-go use.\n\nSpecifications:\n- CAS Number: 33125-97-2\n- Purity: ≥99.8% (HPLC verified)\n- Form: All-in-one disposable vape pen\n- Battery: Integrated, pre-charged\n- Capacity: 0.5ml per unit\n- Draw-activated (no buttons)\n- No charging required\n- Tamper-evident packaging",
+    "featured": false,
+    "images": [
+      "/images/vapes/etomidate-vape-disposable-mini.jpg"
+    ],
+    "name": "Etomidate Vape Disposable Mini",
+    "numReviews": 5,
+    "price": 350,
+    "priceVariants": [
+      {
+        "quantity": 50,
+        "label": "50 Pods",
+        "price": 350
+      },
+      {
+        "quantity": 100,
+        "label": "100 Pods",
+        "price": 550
+      },
+      {
+        "quantity": 200,
+        "label": "200 Pods",
+        "price": 850
+      }
+    ],
+    "rating": 5,
+    "createdAt": "2026-10-30T15:38:54.158Z",
+    "updatedAt": "2026-10-30T15:38:54.158Z"
+  },
+  {
+    "slug": "etomidate-vape-k-pod-strong",
+    "category": "vapes-kpods",
+    "countInStock": 100,
+    "description": "The Strong K-Pod delivers enhanced potency for those who require a more pronounced experience. Formulated with a higher concentration of pharmaceutical-grade etomidate while maintaining the same purity standards.\n\nEach pod undergoes additional quality control testing to ensure consistent dosing and reliable performance. The advanced ceramic coil technology provides smooth vapor production without compromising the integrity of the active compounds.\n\nRecommended for experienced users who are familiar with etomidate effects and require stronger therapeutic outcomes.\n\nSpecifications:\n- CAS Number: 33125-97-2\n- Purity: ≥99.8% (HPLC verified)\n- Form: Enhanced pre-filled vape cartridge\n- Potency: 2x concentration (Classic formula)\n- Compatibility: Universal K-Pod devices\n- Capacity: 1.0ml per pod\n- Advanced ceramic coil technology\n- Enhanced quality control testin",
+    "featured": false,
+    "images": [
+      "/images/vapes/etomidate-vape-k-pod-strong.jpg"
+    ],
+    "name": "Etomidate Vape K-Pod Strong",
+    "numReviews": 5,
+    "price": 350,
+    "priceVariants": [
+      {
+        "quantity": 50,
+        "label": "50 Pods",
+        "price": 350
+      },
+      {
+        "quantity": 100,
+        "label": "100 Pods",
+        "price": 550
+      },
+      {
+        "quantity": 200,
+        "label": "200 Pods",
+        "price": 850
+      }
+    ],
+    "rating": 4.8,
+    "createdAt": "2026-10-30T15:38:54.158Z",
+    "updatedAt": "2026-10-30T15:38:54.158Z"
+  },
+  {
+    "name": "AK-47 Adios Liquid Spray on Paper",
+    "slug": "ak47-adios-k2-paper",
+    "category": "k2-paper-sheets",
+    "images": [
+      "/images/k2-paper/ak47-k2-paper.webp"
+    ],
+    "description": "AK-47 Adios Liquid Spray on Paper is infused with the popular AK-47 blend, known for its fast-acting, hard-hitting profile. A favourite for customers who want a strong, reliable infused sheet.\n\nEach A4 sheet is infused with 25 ml (0.845 fl oz) of high-potency liquid K2. The paper is completely odorless and colorless, making it indistinguishable from a regular sheet of paper. Every order ships in plain, unmarked, discreet packaging.\n\nAvailable in packs of 1, 2, 3, 4, 5 or 10 A4 sheets.",
+    "price": 230,
+    "priceVariants": [
+      {
+        "quantity": 1,
+        "price": 230
+      },
+      {
+        "quantity": 2,
+        "price": 350
+      },
+      {
+        "quantity": 3,
+        "price": 450
+      },
+      {
+        "quantity": 4,
+        "price": 650
+      },
+      {
+        "quantity": 5,
+        "price": 700
+      },
+      {
+        "quantity": 10,
+        "price": 1300
+      }
+    ],
+    "countInStock": 45,
+    "rating": 5,
+    "numReviews": 14,
+    "featured": true,
+    "createdAt": "2026-10-30T15:23:42.434Z",
+    "updatedAt": "2026-10-30T15:23:42.434Z"
+  },
+  {
+    "name": "Diablo K2 Spray on Paper",
+    "slug": "diablo-k2-spray-on-paper",
+    "category": "k2-paper-sheets",
+    "images": [
+      "https://res.cloudinary.com/dnxyxgc1m/image/upload/v1790872365/k2paperliquid/products/v8mgowfs2mzafjefjl8d.jpg"
+    ],
+    "description": "Diablo K2 Spray on Paper is our strongest infused paper product — each A4 sheet is saturated with the famously potent Diablo blend. If you want maximum potency per sheet, this is the one.\n\nEach A4 sheet is infused with 25 ml (0.845 fl oz) of high-potency liquid K2. The paper is completely odorless and colorless, making it indistinguishable from a regular sheet of paper. Every order ships in plain, unmarked, discreet packaging.\n\nAvailable in packs of 1, 2, 3, 4, 5 or 10 A4 sheets.",
+    "price": 250,
+    "priceVariants": [
+      {
+        "quantity": 2,
+        "price": 250
+      },
+      {
+        "quantity": 3,
+        "price": 320
+      },
+      {
+        "quantity": 4,
+        "price": 420
+      },
+      {
+        "quantity": 5,
+        "price": 500
+      },
+      {
+        "quantity": 10,
+        "price": 8200
+      }
+    ],
+    "countInStock": 60,
+    "rating": 4.9,
+    "numReviews": 9,
+    "featured": true,
+    "createdAt": "2026-10-30T15:23:42.434Z",
+    "updatedAt": "2026-10-30T15:23:42.434Z"
+  },
+  {
+    "name": "K2 Liquid on Paper",
+    "slug": "k2-liquid-on-paper",
+    "category": "k2-paper-sheets",
+    "images": [
+      "/images/k2-paper/k2-liquid-on-paper.jpg"
+    ],
+    "description": "K2 Liquid on Paper is the classic wholesale option — premium A4 sheets infused with our standard-strength liquid K2 blend. Ideal for bulk buyers looking for consistent quality at a competitive price.\n\nEach A4 sheet is infused with 25 ml (0.845 fl oz) of high-potency liquid K2. The paper is completely odorless and colorless, making it indistinguishable from a regular sheet of paper. Every order ships in plain, unmarked, discreet packaging.\n\nAvailable in packs of 1, 2, 3, 4, 5 or 10 A4 sheets.",
+    "price": 200,
+    "priceVariants": [
+      {
+        "quantity": 1,
+        "price": 200
+      },
+      {
+        "quantity": 2,
+        "price": 350
+      },
+      {
+        "quantity": 3,
+        "price": 450
+      },
+      {
+        "quantity": 4,
+        "price": 550
+      },
+      {
+        "quantity": 5,
+        "price": 680
+      },
+      {
+        "quantity": 10,
+        "price": 1200
+      }
+    ],
+    "countInStock": 80,
+    "rating": 5,
+    "numReviews": 21,
+    "featured": false,
+    "createdAt": "2026-10-30T15:23:42.434Z",
+    "updatedAt": "2026-10-30T15:23:42.434Z"
+  },
+  {
+    "name": "Kush Liquid Incense on Paper",
+    "slug": "kush-liquid-incense-on-paper",
+    "category": "k2-paper-sheets",
+    "images": [
+      "https://res.cloudinary.com/dnxyxgc1m/image/upload/v1790871947/k2paperliquid/products/mfo5z0oxxu0voitnjsag.jpg"
+    ],
+    "description": "Kush Liquid Incense on Paper delivers the smooth, mellow Kush blend infused directly into A4 sheets. A balanced, well-rounded option that's been a consistent best-seller.\n\nEach A4 sheet is infused with 25 ml (0.845 fl oz) of high-potency liquid K2. The paper is completely odorless and colorless, making it indistinguishable from a regular sheet of paper. Every order ships in plain, unmarked, discreet packaging.\n\nAvailable in packs of 1, 2, 3, 4, 5 or 10 A4 sheets.",
+    "price": 200,
+    "priceVariants": [
+      {
+        "quantity": 1,
+        "price": 200
+      },
+      {
+        "quantity": 2,
+        "price": 350
+      },
+      {
+        "quantity": 3,
+        "price": 450
+      },
+      {
+        "quantity": 4,
+        "price": 550
+      },
+      {
+        "quantity": 5,
+        "price": 680
+      },
+      {
+        "quantity": 10,
+        "price": 1200
+      }
+    ],
+    "countInStock": 55,
+    "rating": 5,
+    "numReviews": 17,
+    "featured": false,
+    "createdAt": "2026-10-30T15:23:42.433Z",
+    "updatedAt": "2026-10-30T15:23:42.433Z"
+  },
+  {
+    "name": "Bizarro Liquid K2 on Paper",
+    "slug": "bizarro-liquid-k2-on-paper",
+    "category": "k2-paper-sheets",
+    "images": [
+      "https://res.cloudinary.com/dnxyxgc1m/image/upload/v1790871875/k2paperliquid/products/fij0dsxos2p4x41x9rfo.jpg"
+    ],
+    "description": "Bizarro Liquid K2 on Paper is infused with the intense Bizarro blend — one of the most requested exotic incense blends on the market. Strong, fast, and reliable.\n\nEach A4 sheet is infused with 25 ml (0.845 fl oz) of high-potency liquid K2. The paper is completely odorless and colorless, making it indistinguishable from a regular sheet of paper. Every order ships in plain, unmarked, discreet packaging.\n\nAvailable in packs of 1, 2, 3, 4, 5 or 10 A4 sheets.",
+    "price": 200,
+    "priceVariants": [
+      {
+        "quantity": 1,
+        "price": 200
+      },
+      {
+        "quantity": 2,
+        "price": 350
+      },
+      {
+        "quantity": 3,
+        "price": 450
+      },
+      {
+        "quantity": 4,
+        "price": 550
+      },
+      {
+        "quantity": 5,
+        "price": 680
+      },
+      {
+        "quantity": 10,
+        "price": 1200
+      }
+    ],
+    "countInStock": 50,
+    "rating": 5,
+    "numReviews": 12,
+    "featured": true,
+    "createdAt": "2026-10-30T15:23:42.433Z",
+    "updatedAt": "2026-10-30T15:23:42.433Z"
+  },
+  {
+    "name": "K2 E-Liquid Spray on Paper",
+    "slug": "k2-e-liquid-spray-on-paper",
+    "category": "k2-paper-sheets",
+    "images": [
+      "https://res.cloudinary.com/dnxyxgc1m/image/upload/v1790871816/k2paperliquid/products/dpolw17pifz1dylbweaa.jpg"
+    ],
+    "description": "K2 E-Liquid Spray on Paper uses our premium e-liquid formulation infused into A4 sheets. Clean, consistent potency in every sheet.\n\nEach A4 sheet is infused with 25 ml (0.845 fl oz) of high-potency liquid K2. The paper is completely odorless and colorless, making it indistinguishable from a regular sheet of paper. Every order ships in plain, unmarked, discreet packaging.\n\nAvailable in packs of 1, 2, 3, 4, 5 or 10 A4 sheets.",
+    "price": 200,
+    "priceVariants": [
+      {
+        "quantity": 1,
+        "price": 200
+      },
+      {
+        "quantity": 2,
+        "price": 350
+      },
+      {
+        "quantity": 3,
+        "price": 450
+      },
+      {
+        "quantity": 4,
+        "price": 550
+      },
+      {
+        "quantity": 5,
+        "price": 680
+      },
+      {
+        "quantity": 10,
+        "price": 1200
+      }
+    ],
+    "countInStock": 65,
+    "rating": 5,
+    "numReviews": 11,
+    "featured": true,
+    "createdAt": "2026-10-30T15:23:42.432Z",
+    "updatedAt": "2026-10-30T15:23:42.432Z"
+  },
+  {
+    "name": "AK-47 K2 Spray",
+    "slug": "ak-47-k2-spray",
+    "category": "k2-liquid-spray",
+    "images": [
+      "/images/k2-spray/ak47-k2-spray.png"
+    ],
+    "description": "AK-47 K2 Spray delivers the fast-acting, hard-hitting AK-47 blend in a convenient spray bottle. Reliable strength and consistent quality in every bottle.\n\nOur liquid spray is made from high-potency engineered cannabinoid blends, lab-tested for strength and consistency. Every bottle is sealed, unmarked and shipped in plain, discreet packaging with worldwide delivery.\n\nAvailable in 25ml and 50ml bottles.",
+    "price": 155,
+    "priceVariants": [
+      {
+        "quantity": 25,
+        "price": 155
+      },
+      {
+        "quantity": 50,
+        "price": 300
+      }
+    ],
+    "countInStock": 50,
+    "rating": 5,
+    "numReviews": 13,
+    "featured": false,
+    "createdAt": "2026-10-30T15:23:42.369Z",
+    "updatedAt": "2026-10-30T15:23:42.369Z"
+  },
+  {
+    "name": "Cannabinoid C-Liquid Spray on Paper",
+    "slug": "cannabinoid-c-liquid-on-paper",
+    "category": "k2-paper-sheets",
+    "images": [
+      "https://res.cloudinary.com/dnxyxgc1m/image/upload/v1790871666/k2paperliquid/products/wporfv5nwzc3q7mdzyzp.jpg"
+    ],
+    "description": "Cannabinoid C-Liquid Spray on Paper is infused with a pure synthetic cannabinoid C-liquid — a full-agonist blend that delivers the strongest possible effect per sheet.\n\nEach A4 sheet is infused with 25 ml (0.845 fl oz) of high-potency liquid K2. The paper is completely odorless and colorless, making it indistinguishable from a regular sheet of paper. Every order ships in plain, unmarked, discreet packaging.\n\nAvailable in packs of 1, 2, 3, 4, 5 or 10 A4 sheets.",
+    "price": 200,
+    "priceVariants": [
+      {
+        "quantity": 1,
+        "price": 200
+      },
+      {
+        "quantity": 2,
+        "price": 350
+      },
+      {
+        "quantity": 3,
+        "price": 450
+      },
+      {
+        "quantity": 4,
+        "price": 550
+      },
+      {
+        "quantity": 5,
+        "price": 680
+      },
+      {
+        "quantity": 10,
+        "price": 1200
+      }
+    ],
+    "countInStock": 40,
+    "rating": 5,
+    "numReviews": 6,
+    "featured": true,
+    "createdAt": "2026-10-30T15:23:42.369Z",
+    "updatedAt": "2026-10-30T15:23:42.369Z"
+  },
+  {
+    "name": "K2 E-Liquid Code Red on Paper",
+    "slug": "k2-code-red-on-paper",
+    "category": "k2-paper-sheets",
+    "images": [
+      "https://res.cloudinary.com/dnxyxgc1m/image/upload/v1790871765/k2paperliquid/products/obohp0gk7fe1qh1ofnvb.jpg"
+    ],
+    "description": "K2 E-Liquid Code Red on Paper is infused with the legendary Code Red blend — known for its extra-strong, fast-acting profile. A premium option for experienced buyers.\n\nEach A4 sheet is infused with 25 ml (0.845 fl oz) of high-potency liquid K2. The paper is completely odorless and colorless, making it indistinguishable from a regular sheet of paper. Every order ships in plain, unmarked, discreet packaging.\n\nAvailable in packs of 1, 2, 3, 4, 5 or 10 A4 sheets.",
+    "price": 200,
+    "priceVariants": [
+      {
+        "quantity": 1,
+        "price": 200
+      },
+      {
+        "quantity": 2,
+        "price": 350
+      },
+      {
+        "quantity": 3,
+        "price": 475
+      },
+      {
+        "quantity": 4,
+        "price": 550
+      },
+      {
+        "quantity": 5,
+        "price": 750
+      },
+      {
+        "quantity": 10,
+        "price": 1200
+      }
+    ],
+    "countInStock": 48,
+    "rating": 5,
+    "numReviews": 8,
+    "featured": true,
+    "createdAt": "2026-10-30T15:23:42.369Z",
+    "updatedAt": "2026-10-30T15:23:42.369Z"
+  },
+  {
+    "name": "K2 E-Liquid CODE RED Spray",
+    "slug": "k2-e-liquid-code-red-spray",
+    "category": "k2-liquid-spray",
+    "images": [
+      "/images/k2-spray/code-red-spray.png"
+    ],
+    "description": "K2 E-Liquid CODE RED Spray is the legendary extra-strength blend in a ready-to-use spray bottle. Famous for its fast, hard-hitting effects — a top choice for experienced buyers.\n\nOur liquid spray is made from high-potency engineered cannabinoid blends, lab-tested for strength and consistency. Every bottle is sealed, unmarked and shipped in plain, discreet packaging with worldwide delivery.\n\nAvailable in 10ml, 25ml, 50ml and 100ml bottles.",
+    "price": 95,
+    "priceVariants": [
+      {
+        "quantity": 10,
+        "price": 95
+      },
+      {
+        "quantity": 25,
+        "price": 200
+      },
+      {
+        "quantity": 50,
+        "price": 340
+      },
+      {
+        "quantity": 100,
+        "price": 559
+      }
+    ],
+    "countInStock": 55,
+    "rating": 5,
+    "numReviews": 16,
+    "featured": true,
+    "createdAt": "2026-10-30T15:23:42.369Z",
+    "updatedAt": "2026-10-30T15:23:42.369Z"
+  },
+  {
+    "name": "Diablo K2 Spray",
+    "slug": "diablo-k2-spray",
+    "category": "k2-liquid-spray",
+    "images": [
+      "/images/k2-spray/diablo-k2-spray.jpg"
+    ],
+    "description": "Diablo K2 Spray is our most potent liquid spray — the same powerful Diablo blend that made our infused paper famous, in an easy-to-apply spray bottle.\n\nOur liquid spray is made from high-potency engineered cannabinoid blends, lab-tested for strength and consistency. Every bottle is sealed, unmarked and shipped in plain, discreet packaging with worldwide delivery.\n\nAvailable in 25ml, 50ml and 100ml bottles.",
+    "price": 150,
+    "priceVariants": [
+      {
+        "quantity": 25,
+        "price": 150
+      },
+      {
+        "quantity": 50,
+        "price": 280
+      },
+      {
+        "quantity": 100,
+        "price": 450
+      }
+    ],
+    "countInStock": 45,
+    "rating": 4.9,
+    "numReviews": 11,
+    "featured": true,
+    "createdAt": "2026-10-30T15:23:42.369Z",
+    "updatedAt": "2026-10-30T15:23:42.369Z"
+  },
+  {
+    "name": "Kush Liquid Incense",
+    "slug": "kush-liquid-incense",
+    "category": "k2-liquid-spray",
+    "images": [
+      "/images/k2-spray/kush-liquid-incense.webp"
+    ],
+    "description": "Kush Liquid Incense is the smooth, mellow Kush blend in a spray bottle — a balanced, well-rounded option and a consistent best-seller among returning customers.\n\nOur liquid spray is made from high-potency engineered cannabinoid blends, lab-tested for strength and consistency. Every bottle is sealed, unmarked and shipped in plain, discreet packaging with worldwide delivery.\n\nAvailable in 100ml, 125ml, 250ml and 500ml bottles.",
+    "price": 250,
+    "priceVariants": [
+      {
+        "quantity": 100,
+        "price": 250
+      },
+      {
+        "quantity": 125,
+        "price": 300
+      },
+      {
+        "quantity": 250,
+        "price": 750
+      },
+      {
+        "quantity": 500,
+        "price": 1100
+      }
+    ],
+    "countInStock": 60,
+    "rating": 5,
+    "numReviews": 18,
+    "featured": false,
+    "createdAt": "2026-10-30T15:23:42.368Z",
+    "updatedAt": "2026-10-30T15:23:42.368Z"
+  },
+  {
+    "name": "5-CL-ADBA Precursor/Kit",
+    "slug": "5-cl-adba-precursor-kit-powder",
+    "category": "k2-powder",
+    "images": [
+      "https://res.cloudinary.com/dnxyxgc1m/image/upload/v1790862651/k2paperliquid/products/s8okqo3udteccms8qz3p.jpg"
+    ],
+    "description": "$17",
+    "price": 470,
+    "priceVariants": [
+      {
+        "quantity": 50,
+        "price": 470
+      },
+      {
+        "quantity": 100,
+        "price": 630
+      },
+      {
+        "quantity": 500,
+        "price": 1100
+      },
+      {
+        "quantity": 1000,
+        "price": 2300
+      }
+    ],
+    "countInStock": 100,
+    "rating": 4.8,
+    "numReviews": 29,
+    "featured": true,
+    "createdAt": "2026-10-30T15:23:42.368Z",
+    "updatedAt": "2026-10-30T15:23:42.368Z"
+  },
+  {
+    "name": "6-CL-ADBA Precursor/Kit",
+    "slug": "6-cl-adba-precursor-kit-powder",
+    "category": "k2-powder",
+    "images": [
+      "https://res.cloudinary.com/dnxyxgc1m/image/upload/v1790862709/k2paperliquid/products/bnu8xntxs6nzchw7e3el.jpg"
+    ],
+    "description": "$18",
+    "price": 470,
+    "priceVariants": [
+      {
+        "quantity": 50,
+        "price": 470
+      },
+      {
+        "quantity": 100,
+        "price": 630
+      },
+      {
+        "quantity": 500,
+        "price": 1100
+      },
+      {
+        "quantity": 1000,
+        "price": 2300
+      }
+    ],
+    "countInStock": 100,
+    "rating": 4.6,
+    "numReviews": 17,
+    "featured": true,
+    "createdAt": "2026-10-30T15:23:42.368Z",
+    "updatedAt": "2026-10-30T15:23:42.368Z"
+  },
+  {
+    "name": "5-FADB Precursor/Kit",
+    "slug": "5-fadb-precursor-kit-powder",
+    "category": "k2-powder",
+    "images": [
+      "/images/k2-powder/5-fadb-precursor-kit-powder.jpg"
+    ],
+    "description": "$19",
+    "price": 470,
+    "priceVariants": [
+      {
+        "quantity": 50,
+        "price": 470
+      },
+      {
+        "quantity": 100,
+        "price": 630
+      },
+      {
+        "quantity": 500,
+        "price": 1100
+      },
+      {
+        "quantity": 1000,
+        "price": 2300
+      }
+    ],
+    "countInStock": 100,
+    "rating": 4.7,
+    "numReviews": 21,
+    "featured": true,
+    "createdAt": "2026-10-30T15:23:42.368Z",
+    "updatedAt": "2026-10-30T15:23:42.368Z"
+  },
+  {
+    "name": "Bizarro Liquid K2 Spray",
+    "slug": "bizarro-liquid-k2-spray",
+    "category": "k2-liquid-spray",
+    "images": [
+      "/images/k2-spray/bizarro-k2-spray.jpg"
+    ],
+    "description": "Bizarro Liquid K2 Spray is infused with the intense Bizarro blend — one of the strongest liquid sprays we stock. Bold, fast-acting and built for experienced users.\n\nOur liquid spray is made from high-potency engineered cannabinoid blends, lab-tested for strength and consistency. Every bottle is sealed, unmarked and shipped in plain, discreet packaging with worldwide delivery.\n\nAvailable in 50ml, 100ml and 200ml bottles.",
+    "price": 210,
+    "priceVariants": [
+      {
+        "quantity": 50,
+        "price": 210
+      },
+      {
+        "quantity": 100,
+        "price": 400
+      },
+      {
+        "quantity": 200,
+        "price": 700
+      }
+    ],
+    "countInStock": 40,
+    "rating": 5,
+    "numReviews": 9,
+    "featured": false,
+    "createdAt": "2026-10-30T15:23:42.368Z",
+    "updatedAt": "2026-10-30T15:23:42.368Z"
+  },
+  {
+    "name": "5F-EDMB-PINACA",
+    "slug": "5f-edmb-pinaca-powder",
+    "category": "k2-powder",
+    "images": [
+      "https://res.cloudinary.com/dnxyxgc1m/image/upload/v1790862780/k2paperliquid/products/uujs7lo0dousqtr0tbgm.jpg"
+    ],
+    "description": "$1a",
+    "price": 470,
+    "priceVariants": [
+      {
+        "quantity": 50,
+        "price": 470
+      },
+      {
+        "quantity": 100,
+        "price": 630
+      },
+      {
+        "quantity": 500,
+        "price": 1100
+      },
+      {
+        "quantity": 1000,
+        "price": 2300
+      }
+    ],
+    "countInStock": 100,
+    "rating": 4.5,
+    "numReviews": 15,
+    "featured": false,
+    "createdAt": "2026-10-30T15:23:42.367Z",
+    "updatedAt": "2026-10-30T15:23:42.367Z"
+  },
+  {
+    "name": "ADB-FUBINACA",
+    "slug": "adb-fubinaca-powder",
+    "category": "k2-powder",
+    "images": [
+      "https://res.cloudinary.com/dnxyxgc1m/image/upload/v1790862863/k2paperliquid/products/hp6mcjzbd4xvdcgaaohu.jpg"
+    ],
+    "description": "$1b",
+    "price": 470,
+    "priceVariants": [
+      {
+        "quantity": 50,
+        "price": 470
+      },
+      {
+        "quantity": 100,
+        "price": 630
+      },
+      {
+        "quantity": 500,
+        "price": 1100
+      },
+      {
+        "quantity": 1000,
+        "price": 2300
+      }
+    ],
+    "countInStock": 34,
+    "rating": 4,
+    "numReviews": 1,
+    "featured": false,
+    "createdAt": "2026-10-30T15:23:42.367Z",
+    "updatedAt": "2026-10-30T15:23:42.367Z"
+  },
+  {
+    "name": "AMB-FUBINACA",
+    "slug": "amb-fubinaca-powder",
+    "category": "k2-powder",
+    "images": [
+      "/images/k2-powder/amb-fubinaca-powder.jpg"
+    ],
+    "description": "$1c",
+    "price": 470,
+    "priceVariants": [
+      {
+        "quantity": 50,
+        "price": 470
+      },
+      {
+        "quantity": 100,
+        "price": 630
+      },
+      {
+        "quantity": 500,
+        "price": 1100
+      },
+      {
+        "quantity": 1000,
+        "price": 2300
+      }
+    ],
+    "countInStock": 300,
+    "rating": 4.6,
+    "numReviews": 20,
+    "featured": true,
+    "createdAt": "2026-10-30T15:23:42.366Z",
+    "updatedAt": "2026-10-30T15:23:42.366Z"
+  },
+  {
+    "name": "MDMB-4en-PINACA",
+    "slug": "mdmb-4en-pinaca-powder",
+    "category": "k2-powder",
+    "images": [
+      "/images/k2-powder/mdmb-4en-pinaca-powder.jpg"
+    ],
+    "description": "$1d",
+    "price": 470,
+    "priceVariants": [
+      {
+        "quantity": 50,
+        "price": 470
+      },
+      {
+        "quantity": 100,
+        "price": 630
+      },
+      {
+        "quantity": 500,
+        "price": 1100
+      },
+      {
+        "quantity": 1000,
+        "price": 2300
+      }
+    ],
+    "countInStock": 300,
+    "rating": 4.8,
+    "numReviews": 24,
+    "featured": false,
+    "createdAt": "2026-10-30T15:23:42.348Z",
+    "updatedAt": "2026-10-30T15:23:42.348Z"
+  },
+  {
+    "name": "5F-MDMB-2201",
+    "slug": "5f-mdmb-2201-powder",
+    "category": "k2-powder",
+    "images": [
+      "https://res.cloudinary.com/dnxyxgc1m/image/upload/v1790862602/k2paperliquid/products/sreqzvbrieoe73ysk4o4.jpg"
+    ],
+    "description": "$1e",
+    "price": 470,
+    "priceVariants": [
+      {
+        "quantity": 50,
+        "price": 470
+      },
+      {
+        "quantity": 100,
+        "price": 630
+      },
+      {
+        "quantity": 500,
+        "price": 1100
+      },
+      {
+        "quantity": 1000,
+        "price": 2300
+      }
+    ],
+    "countInStock": 23,
+    "rating": 4.8,
+    "numReviews": 22,
+    "featured": true,
+    "createdAt": "2026-10-30T15:23:42.341Z",
+    "updatedAt": "2026-10-30T15:23:42.341Z"
+  },
+  {
+    "name": "JWH-018",
+    "slug": "jwh-018-powder",
+    "category": "k2-powder",
+    "images": [
+      "https://res.cloudinary.com/dnxyxgc1m/image/upload/v1790862514/k2paperliquid/products/barl9sbmxjg5j6grqw1r.jpg"
+    ],
+    "description": "$1f",
+    "price": 470,
+    "priceVariants": [
+      {
+        "quantity": 50,
+        "price": 470
+      },
+      {
+        "quantity": 100,
+        "price": 630
+      },
+      {
+        "quantity": 500,
+        "price": 1100
+      },
+      {
+        "quantity": 1000,
+        "price": 2300
+      }
+    ],
+    "countInStock": 50,
+    "rating": 4.9,
+    "numReviews": 47,
+    "featured": true,
+    "createdAt": "2026-10-30T15:23:42.335Z",
+    "updatedAt": "2026-10-30T15:23:42.335Z"
+  },
+  {
+    "name": "4F-ADB Precursor/Kit",
+    "slug": "4f-adb-precursor-kit-powder",
+    "category": "k2-powder",
+    "images": [
+      "/images/k2-powder/4f-adb-precursor-kit-powder.jpg"
+    ],
+    "description": "$20",
+    "price": 470,
+    "priceVariants": [
+      {
+        "quantity": 50,
+        "price": 470
+      },
+      {
+        "quantity": 100,
+        "price": 630
+      },
+      {
+        "quantity": 500,
+        "price": 1100
+      },
+      {
+        "quantity": 1000,
+        "price": 2300
+      }
+    ],
+    "countInStock": 78,
+    "rating": 4.7,
+    "numReviews": 18,
+    "featured": false,
+    "createdAt": "2026-10-30T15:23:42.335Z",
+    "updatedAt": "2026-10-30T15:23:42.335Z"
+  },
+  {
+    "name": "5FADB Precursor/Kit Pink",
+    "slug": "5-fadb-powder",
+    "category": "k2-powder",
+    "images": [
+      "https://res.cloudinary.com/dnxyxgc1m/image/upload/v1790857084/k2paperliquid/products/ik7isg2fhtdtmmjz2xrk.jpg"
+    ],
+    "description": "$21",
+    "price": 470,
+    "priceVariants": [
+      {
+        "quantity": 50,
+        "price": 470
+      },
+      {
+        "quantity": 100,
+        "price": 630
+      },
+      {
+        "quantity": 500,
+        "price": 1100
+      },
+      {
+        "quantity": 1000,
+        "price": 2300
+      }
+    ],
+    "countInStock": 40,
+    "rating": 4.8,
+    "numReviews": 28,
+    "featured": true,
+    "createdAt": "2026-10-30T15:23:42.334Z",
+    "updatedAt": "2026-10-30T15:23:42.334Z"
+  },
+  {
+    "name": "6-CL-ADBA (6-Chloro-ADBA)",
+    "slug": "6-cl-adba-powder",
+    "category": "k2-powder",
+    "images": [
+      "https://res.cloudinary.com/dnxyxgc1m/image/upload/v1790862408/k2paperliquid/products/w4ienfetwltomc74i2kx.jpg"
+    ],
+    "description": "$22",
+    "price": 470,
+    "priceVariants": [
+      {
+        "quantity": 50,
+        "price": 470
+      },
+      {
+        "quantity": 100,
+        "price": 630
+      },
+      {
+        "quantity": 500,
+        "price": 1100
+      },
+      {
+        "quantity": 1000,
+        "price": 2300
+      }
+    ],
+    "countInStock": 38,
+    "rating": 4.7,
+    "numReviews": 19,
+    "featured": true,
+    "createdAt": "2026-10-30T15:23:42.334Z",
+    "updatedAt": "2026-10-30T15:23:42.334Z"
+  },
+  {
+    "name": "5CL-ADBA Precursor/Kit pink",
+    "slug": "5-cl-adba-powder",
+    "category": "k2-powder",
+    "images": [
+      "https://res.cloudinary.com/dnxyxgc1m/image/upload/v1790862284/k2paperliquid/products/hsbdm2yqmhxnfhtbnsgr.jpg"
+    ],
+    "description": "$23",
+    "price": 470,
+    "priceVariants": [
+      {
+        "quantity": 50,
+        "price": 470
+      },
+      {
+        "quantity": 100,
+        "price": 630
+      },
+      {
+        "quantity": 500,
+        "price": 1100
+      },
+      {
+        "quantity": 1000,
+        "price": 2300
+      }
+    ],
+    "countInStock": 45,
+    "rating": 4.8,
+    "numReviews": 34,
+    "featured": false,
+    "createdAt": "2026-10-30T15:23:42.324Z",
+    "updatedAt": "2026-10-30T15:23:42.324Z"
+  },
+  {
+    "name": "Etomidate Powder Pure",
+    "slug": "etomidate-powder-pure",
+    "category": "etomidate",
+    "images": [
+      "/images/etomidate/etomidate-powder-pure.jpg"
+    ],
+    "description": "$24",
+    "price": 700,
+    "priceVariants": [
+      {
+        "quantity": 50,
+        "price": 700
+      },
+      {
+        "quantity": 100,
+        "price": 1250
+      },
+      {
+        "quantity": 200,
+        "price": 2200
+      },
+      {
+        "quantity": 500,
+        "price": 4500
+      },
+      {
+        "quantity": 1000,
+        "price": 7500
+      }
+    ],
+    "countInStock": 50,
+    "rating": 4.8,
+    "numReviews": 12,
+    "featured": true,
+    "createdAt": "2026-10-30T15:23:42.324Z",
+    "updatedAt": "2026-10-30T15:23:42.324Z"
+  },
+  {
+    "name": "Etomidate Crystal",
+    "slug": "etomidate-crystal",
+    "category": "etomidate",
+    "images": [
+      "/images/etomidate/etomidate-crystal.jpg"
+    ],
+    "description": "$25",
+    "price": 700,
+    "priceVariants": [
+      {
+        "quantity": 50,
+        "price": 700
+      },
+      {
+        "quantity": 100,
+        "price": 1250
+      },
+      {
+        "quantity": 200,
+        "price": 2200
+      },
+      {
+        "quantity": 500,
+        "price": 4500
+      },
+      {
+        "quantity": 1000,
+        "price": 7500
+      }
+    ],
+    "countInStock": 50,
+    "rating": 4.8,
+    "numReviews": 12,
+    "featured": true,
+    "createdAt": "2026-10-30T15:23:42.324Z",
+    "updatedAt": "2026-10-30T15:23:42.324Z"
+  },
+  {
+    "name": "Cychlorphine HCL Powder",
+    "slug": "cychlorphine-hcl-powder",
+    "category": "etomidate",
+    "images": [
+      "/images/etomidate/cychlorphine-hcl-powder.jpg"
+    ],
+    "description": "$26",
+    "price": 800,
+    "priceVariants": [
+      {
+        "quantity": 50,
+        "price": 800
+      },
+      {
+        "quantity": 100,
+        "price": 1400
+      },
+      {
+        "quantity": 200,
+        "price": 2500
+      },
+      {
+        "quantity": 500,
+        "price": 5200
+      },
+      {
+        "quantity": 1000,
+        "price": 8500
+      }
+    ],
+    "countInStock": 50,
+    "rating": 4.8,
+    "numReviews": 12,
+    "featured": false,
+    "createdAt": "2026-10-30T15:23:42.317Z",
+    "updatedAt": "2026-10-30T15:23:42.317Z"
+  },
+  {
+    "name": "Medetomidine Powder",
+    "slug": "medetomidine-powder",
+    "category": "etomidate",
+    "images": [
+      "/images/etomidate/medetomidine-powder.jpg"
+    ],
+    "description": "$27",
+    "price": 800,
+    "priceVariants": [
+      {
+        "quantity": 50,
+        "price": 800
+      },
+      {
+        "quantity": 100,
+        "price": 1400
+      },
+      {
+        "quantity": 200,
+        "price": 2500
+      },
+      {
+        "quantity": 500,
+        "price": 5200
+      },
+      {
+        "quantity": 1000,
+        "price": 8500
+      }
+    ],
+    "countInStock": 50,
+    "rating": 4.8,
+    "numReviews": 12,
+    "featured": false,
+    "createdAt": "2026-10-30T15:23:42.316Z",
+    "updatedAt": "2026-10-30T15:23:42.316Z"
+  },
+  {
+    "name": "Tiletamine Powder",
+    "slug": "tiletamine-powder",
+    "category": "etomidate",
+    "images": [
+      "/images/etomidate/tiletamine-powder.jpg"
+    ],
+    "description": "$28",
+    "price": 800,
+    "priceVariants": [
+      {
+        "quantity": 50,
+        "price": 800
+      },
+      {
+        "quantity": 100,
+        "price": 1400
+      },
+      {
+        "quantity": 200,
+        "price": 2500
+      },
+      {
+        "quantity": 500,
+        "price": 5200
+      },
+      {
+        "quantity": 1000,
+        "price": 8500
+      }
+    ],
+    "countInStock": 50,
+    "rating": 4.8,
+    "numReviews": 12,
+    "featured": false,
+    "createdAt": "2026-10-30T15:23:42.316Z",
+    "updatedAt": "2026-10-30T15:23:42.316Z"
+  },
+  {
+    "name": "Spirochlorphine R6890",
+    "slug": "spirochlorphine-r6890",
+    "category": "etomidate",
+    "images": [
+      "/images/etomidate/spirochlorphine-r6890.jpg"
+    ],
+    "description": "$29",
+    "price": 800,
+    "priceVariants": [
+      {
+        "quantity": 50,
+        "price": 800
+      },
+      {
+        "quantity": 100,
+        "price": 1400
+      },
+      {
+        "quantity": 200,
+        "price": 2500
+      },
+      {
+        "quantity": 500,
+        "price": 5200
+      },
+      {
+        "quantity": 1000,
+        "price": 8500
+      }
+    ],
+    "countInStock": 50,
+    "rating": 4.8,
+    "numReviews": 12,
+    "featured": false,
+    "createdAt": "2026-10-30T15:23:42.307Z",
+    "updatedAt": "2026-10-30T15:23:42.307Z"
+  },
+  {
+    "name": "k2spice/synthetic-marijuana",
+    "slug": "k2spicesynthetic-marijuana",
+    "category": "k2-powder",
+    "images": [
+      "https://res.cloudinary.com/dnxyxgc1m/image/upload/v1791021093/k2paperliquid/products/aa11kqohc0bvxyqufcnm.jpg"
+    ],
+    "description": "K2 and Spice are just two of the many trade names or brands for synthetic designer drugs that are intended to mimic THC, the main psychoactive ingredient of marijuana. These designer synthetic drugs are from the synthetic cannabinoid class of drugs that are often marketed and sold under the guise of “herbal incense” or “potpourri.”\n\nThese products are being abused for their psychoactive properties and are packaged without information as to their health and safety risks.\n\nStreet Title\nSpice, K2, RedX Dawn, Paradise, Demon, Black Magic, Spike, Mr. Nice Guy, Ninja, Zohai, Dream, Genie, Sence, Smoke, Skunk, Serenity, Yucatan, Fire, Skooby Snax, and Crazy Clown.",
+    "price": 470,
+    "priceVariants": [
+      {
+        "quantity": 50,
+        "price": 470
+      },
+      {
+        "quantity": 100,
+        "price": 630
+      },
+      {
+        "quantity": 500,
+        "price": 1100
+      },
+      {
+        "quantity": 1000,
+        "price": 2300
+      }
+    ],
+    "countInStock": 90,
+    "rating": 5,
+    "numReviews": 80,
+    "featured": true,
+    "createdAt": "2026-10-30T15:23:42.305Z",
+    "updatedAt": "2026-10-30T15:23:42.305Z"
+  },
+  {
+    "name": "adb-butinaca",
+    "slug": "adb-butinaca",
+    "category": "k2-powder",
+    "images": [
+      "https://res.cloudinary.com/dnxyxgc1m/image/upload/v1791025289/k2paperliquid/products/a0sxmvz4emvfuv1pk63g.jpg"
+    ],
+    "description": "$2a",
+    "price": 470,
+    "priceVariants": [],
+    "countInStock": 60,
+    "rating": 5,
+    "numReviews": 70,
+    "featured": true,
+    "createdAt": "2026-10-30T15:23:42.305Z",
+    "updatedAt": "2026-10-30T15:23:42.305Z"
+  },
+  {
+    "name": "Ab-pinaca",
+    "slug": "ab-pinaca",
+    "category": "k2-powder",
+    "images": [
+      "https://res.cloudinary.com/dnxyxgc1m/image/upload/v1791026405/k2paperliquid/products/pzjhxgomdjykf6oqua2j.jpg"
+    ],
+    "description": "AB-PINACA Reference Standard | darkchemsite.com Research-grade synthetic cannabinoid analogue for laboratory instrumentation.\n\nEach unit includes verified composition, chromatographic signatures, and spectral documentation, supporting GC-MS, LC-MS, FT-IR, and forensic comparison studies in accredited laboratory environments.",
+    "price": 470,
+    "priceVariants": [],
+    "countInStock": 90,
+    "rating": 5,
+    "numReviews": 80,
+    "featured": true,
+    "createdAt": "2026-10-30T15:23:42.231Z",
+    "updatedAt": "2026-10-30T15:23:42.231Z"
+  }
+]

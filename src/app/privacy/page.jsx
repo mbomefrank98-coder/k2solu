@@ -1,11 +1,11 @@
 import Link from 'next/link';
 
 export const metadata = {
-  metadataBase: new URL(process.env.NEXT_PUBLIC_BASE_URL || 'https://k2liquidstore.com'),
+  metadataBase: new URL(process.env.NEXT_PUBLIC_BASE_URL || 'https://k2solutionpro.com'),
   title: 'Privacy Policy',
-  description: 'Read the K2LiquidStore Privacy Policy. Learn how we collect, use and protect your personal information when ordering K2 paper, spray, powder and etomidate online.',
+  description: 'Read the K2SolutionPro Privacy Policy. Learn how we collect, use and protect your personal information when ordering K2 paper, spray, powder and etomidate online.',
   keywords: [
-    'privacy policy', 'K2LiquidStore privacy', 'k2 paper privacy',
+    'privacy policy', 'K2SolutionPro privacy', 'k2 paper privacy',
     'personal information', 'data protection',
   ],
   alternates: { canonical: '/privacy' },
@@ -40,8 +40,8 @@ export default function PrivacyPolicyPage() {
 
         <section>
           <h2 className="mb-4 font-display text-2xl font-extrabold tracking-tight text-bone">1. Introduction</h2>
-          <p className="mb-4">Welcome to K2LiquidStore. This Privacy Policy explains how we collect, use, disclose, and safeguard your information when you visit our website and use our services.</p>
-          <p>By accessing or using K2LiquidStore, you agree to the terms of this Privacy Policy. If you do not agree, please do not use our services.</p>
+          <p className="mb-4">Welcome to K2SolutionPro. This Privacy Policy explains how we collect, use, disclose, and safeguard your information when you visit our website and use our services.</p>
+          <p>By accessing or using K2SolutionPro, you agree to the terms of this Privacy Policy. If you do not agree, please do not use our services.</p>
         </section>
 
         <section>
@@ -114,7 +114,7 @@ export default function PrivacyPolicyPage() {
           <ul className="space-y-2 ml-1 mb-4">
             {['Right to know what personal information is collected','Right to know if personal information is sold or disclosed','Right to opt-out of sale of personal information','Right to non-discrimination for exercising your rights'].map(i=><li key={i} className="flex gap-3"><Dot /><span>{i}</span></li>)}
           </ul>
-          <p>To exercise your rights, contact us on <a href="https://wa.me/15125922145" target="_blank" rel="noopener noreferrer" className="text-volt hover:underline">WhatsApp</a> or <a href="https://t.me/cannachem" target="_blank" rel="noopener noreferrer" className="text-volt hover:underline">Telegram</a>.</p>
+          <p>To exercise your rights, contact us on <a href="https://wa.me/17406027691" target="_blank" rel="noopener noreferrer" className="text-volt hover:underline">WhatsApp</a> or by <a href="mailto:order@k2solutionpro.com" className="text-volt hover:underline">email</a>.</p>
         </section>
 
         <section>
@@ -150,15 +150,15 @@ export default function PrivacyPolicyPage() {
           <h2 className="mb-4 font-display text-2xl font-extrabold tracking-tight text-bone">13. Contact Us</h2>
           <p className="mb-5">Questions about this Privacy Policy? Contact us:</p>
           <div className="border border-line rounded-xl p-5 space-y-2 text-sm">
-            <p><strong>WhatsApp:</strong> <a href="https://wa.me/15125922145" target="_blank" rel="noopener noreferrer" className="text-volt hover:underline">+1 512-592-2145</a></p>
-            <p><strong>Telegram:</strong> <a href="https://t.me/cannachem" target="_blank" rel="noopener noreferrer" className="text-volt hover:underline">@cannachem</a></p>
+            <p><strong>WhatsApp:</strong> <a href="https://wa.me/17406027691" target="_blank" rel="noopener noreferrer" className="text-volt hover:underline">+1 740-602-7691</a></p>
+            <p><strong>Email:</strong> <a href="mailto:order@k2solutionpro.com" className="text-volt hover:underline">order@k2solutionpro.com</a></p>
             <p><strong>Response Time:</strong> We aim to respond within 48 hours</p>
           </div>
         </section>
 
         <section className="border border-line bg-night-800 rounded-xl p-6 text-sm">
           <h2 className="mb-3 font-display text-lg font-extrabold uppercase tracking-wide text-bone">Your Consent</h2>
-          <p>By using K2LiquidStore, you consent to our Privacy Policy and agree to its terms. If you do not agree, please discontinue use of our services immediately.</p>
+          <p>By using K2SolutionPro, you consent to our Privacy Policy and agree to its terms. If you do not agree, please discontinue use of our services immediately.</p>
         </section>
       </article>
 

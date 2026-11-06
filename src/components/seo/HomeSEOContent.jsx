@@ -29,17 +29,17 @@ const COLUMNS = [
 
 export default function HomeSEOContent() {
   return (
-    <section className="border-b border-line bg-night-950">
-      <div className="wrap py-16 sm:py-24">
-        <p className="tag mb-3">05 — product.notes</p>
+    <section className="wrap py-8">
+      <div className="py-8 sm:py-12">
+        <p className="tag mb-4">Product notes</p>
         <h2 className="h-display mb-12 max-w-3xl text-3xl sm:text-4xl">
-          EVERY FORMAT, <span className="text-volt">ONE STANDARD</span>
+          Every format, <span className="gradient-text">one standard</span>
         </h2>
 
-        <div className="grid grid-cols-1 gap-px border border-line bg-line lg:grid-cols-2">
+        <div className="grid grid-cols-1 gap-5 lg:grid-cols-2">
           {COLUMNS.map((col) => (
-            <article key={col.title} className="bg-night-900 p-7 sm:p-10">
-              <h3 className="font-display text-lg font-bold uppercase tracking-wide text-bone">
+            <article key={col.title} className="cell p-7 sm:p-9">
+              <h3 className="font-display text-lg font-semibold text-bone">
                 {col.title}
               </h3>
               {col.body.map((p, i) => (
@@ -52,7 +52,7 @@ export default function HomeSEOContent() {
                   <li key={link.href}>
                     <Link
                       href={link.href}
-                      className="group inline-flex items-center gap-2 font-mono text-[12px] uppercase tracking-[0.14em] text-volt hover:text-bone"
+                      className="group inline-flex items-center gap-2 text-sm font-semibold text-volt hover:text-bone"
                     >
                       {link.label}
                       <FiArrowRight className="h-3.5 w-3.5 transition-transform group-hover:translate-x-1" />
@@ -66,7 +66,7 @@ export default function HomeSEOContent() {
 
         <p className="mt-8 max-w-3xl text-sm leading-relaxed text-bone-faint">
           Trusted by repeat buyers across the US, EU and beyond — discreet packaging,
-          Bitcoin-only checkout, and support on WhatsApp and Telegram seven days a week.
+          BTC or Apple Pay checkout, and support on WhatsApp and email seven days a week.
           Browse the <Link href="/products" className="text-volt underline underline-offset-4 decoration-volt/40 hover:decoration-volt">full catalog</Link> or read our <Link href="/faq" className="text-volt underline underline-offset-4 decoration-volt/40 hover:decoration-volt">FAQ</Link> for shipping and payment details.
         </p>
       </div>

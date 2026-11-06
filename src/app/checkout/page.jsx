@@ -6,7 +6,7 @@ import Link from 'next/link';
 import { useCart } from '@/components/cart/CartProvider';
 import OrderSummary from '@/components/checkout/OrderSummary';
 import OrderContactForm from '@/components/checkout/OrderContactForm';
-import { FaLock, FaBitcoin } from 'react-icons/fa';
+import { FaLock, FaBitcoin, FaApplePay } from 'react-icons/fa';
 
 export default function CheckoutPage() {
   const { cart } = useCart();
@@ -64,16 +64,21 @@ export default function CheckoutPage() {
         <h1 className="h-display mb-8 text-3xl sm:text-4xl">Complete your order</h1>
 
         {/* Payment method notice */}
-        <div className="mb-6 flex items-center gap-4 border border-signal/50 bg-signal/10 px-5 py-4">
-          <div className="flex h-12 w-12 shrink-0 items-center justify-center border border-signal/40 bg-night-950">
-            <FaBitcoin className="text-2xl text-signal" />
+        <div className="mb-6 flex items-center gap-4 rounded-2xl border border-signal/50 bg-signal/10 px-5 py-4">
+          <div className="flex shrink-0 gap-2">
+            <div className="flex h-12 w-12 items-center justify-center rounded-xl border border-signal/40 bg-night-950">
+              <FaBitcoin className="text-2xl text-signal" />
+            </div>
+            <div className="flex h-12 w-12 items-center justify-center rounded-xl border border-line bg-night-950">
+              <FaApplePay className="text-3xl text-bone" />
+            </div>
           </div>
           <div>
             <p className="font-display text-sm font-bold uppercase tracking-wide text-bone">
-              We accept Bitcoin (BTC) only
+              We accept Bitcoin (BTC) &amp; Apple Pay
             </p>
             <p className="mt-1 text-xs leading-relaxed text-bone-muted">
-              After you send your order on WhatsApp or Telegram, we&apos;ll reply with our BTC wallet address and exact payment instructions.
+              After you send your order on WhatsApp or by email, we&apos;ll reply with payment instructions for your chosen method — BTC wallet address or Apple Pay details.
             </p>
           </div>
         </div>
@@ -95,14 +100,22 @@ export default function CheckoutPage() {
               <p className="mb-4 text-xs leading-relaxed text-bone-muted">
                 Questions about your order? Our team is here to assist.
               </p>
-              <a
-                href="https://wa.me/15125922145"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="inline-flex items-center gap-1.5 font-mono text-[11px] uppercase tracking-[0.14em] text-volt transition-colors hover:text-bone"
-              >
-                Contact support &rarr;
-              </a>
+              <div className="flex flex-col gap-2">
+                <a
+                  href="https://wa.me/17406027691"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="inline-flex items-center gap-1.5 font-mono text-[11px] uppercase tracking-[0.14em] text-volt transition-colors hover:text-bone"
+                >
+                  WhatsApp support &rarr;
+                </a>
+                <a
+                  href="mailto:order@k2solutionpro.com?subject=Order%20support"
+                  className="inline-flex items-center gap-1.5 font-mono text-[11px] uppercase tracking-[0.14em] text-volt transition-colors hover:text-bone"
+                >
+                  order@k2solutionpro.com &rarr;
+                </a>
+              </div>
             </div>
           </div>
         </div>

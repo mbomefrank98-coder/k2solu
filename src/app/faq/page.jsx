@@ -2,7 +2,7 @@
 
 import { useState } from 'react';
 import Link from 'next/link';
-import { FaQuestionCircle, FaChevronDown, FaChevronUp, FaSearch, FaWhatsapp, FaTelegramPlane } from 'react-icons/fa';
+import { FaQuestionCircle, FaChevronDown, FaChevronUp, FaSearch, FaWhatsapp, FaEnvelope } from 'react-icons/fa';
 
 function renderAnswerWithLinks(text) {
   return text;
@@ -27,7 +27,7 @@ export default function FAQPage() {
     {
       category: 'ordering',
       question: 'What payment methods do you accept?',
-      answer: 'We accept Bitcoin (BTC) only. Contact us on WhatsApp after placing your order and we\'ll send you our BTC wallet address with exact payment instructions.'
+      answer: 'We accept Bitcoin (BTC) and Apple Pay. Contact us on WhatsApp or by email after placing your order and we\'ll send you payment instructions for your chosen method.'
     },
     {
       category: 'ordering',
@@ -79,7 +79,7 @@ export default function FAQPage() {
     {
       category: 'shipping',
       question: 'Is packaging discreet?',
-      answer: 'Yes, absolutely. All orders are shipped in plain, unmarked packaging with no mention of K2LiquidStore or product details. The sender name is generic for your privacy.'
+      answer: 'Yes, absolutely. All orders are shipped in plain, unmarked packaging with no mention of K2SolutionPro or product details. The sender name is generic for your privacy.'
     },
     {
       category: 'shipping',
@@ -197,7 +197,7 @@ export default function FAQPage() {
     {
       category: 'account',
       question: 'Do you offer customer support?',
-      answer: 'Yes! Message us on WhatsApp or Telegram — we typically respond within 24 hours.'
+      answer: 'Yes! Message us on WhatsApp or by email — we typically respond within 24 hours.'
     },
     {
       category: 'ordering',
@@ -312,15 +312,15 @@ export default function FAQPage() {
         </div>
 
         {/* Still Have Questions CTA */}
-        <div className="mt-12 border border-volt/40 bg-volt/5 p-8 text-center">
+        <div className="mt-12 rounded-3xl border border-volt/30 bg-volt/5 p-8 text-center">
           <h2 className="h-display mb-2 text-xl">Still have questions?</h2>
           <p className="mb-6 text-sm text-bone-muted">Our support team typically responds within 24 hours.</p>
           <div className="flex flex-col justify-center gap-3 sm:flex-row">
-            <a href="https://wa.me/15125922145" target="_blank" rel="noopener noreferrer" className="btn-volt">
+            <a href="https://wa.me/17406027691" target="_blank" rel="noopener noreferrer" className="btn-volt">
               <FaWhatsapp className="h-4 w-4" /> WhatsApp us
             </a>
-            <a href="https://t.me/cannachem" target="_blank" rel="noopener noreferrer" className="btn-ghost">
-              <FaTelegramPlane className="h-4 w-4" /> Telegram us
+            <a href="mailto:order@k2solutionpro.com" className="btn-ghost">
+              <FaEnvelope className="h-3.5 w-3.5" /> Email us
             </a>
           </div>
         </div>

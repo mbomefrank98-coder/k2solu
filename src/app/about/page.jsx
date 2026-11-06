@@ -38,7 +38,7 @@ export default function AboutPage() {
               Premium K2 paper, liquid spray and powder — shipped fast and discreet, worldwide.
             </h1>
             <p className="text-lg leading-relaxed text-bone-muted">
-              K2LiquidStore is a specialist supplier of K2 paper sheets, K2 liquid spray, cannabinoid K2 powder, research-grade etomidate and K-Pods. We serve customers across more than 50 countries with consistent quality, fast dispatch and plain, discreet packaging on every order.
+              K2SolutionPro is a specialist supplier of K2 paper sheets, K2 liquid spray, cannabinoid K2 powder, research-grade etomidate and K-Pods. We serve customers across more than 50 countries with consistent quality, fast dispatch and plain, discreet packaging on every order.
             </p>
           </motion.div>
         </div>
@@ -52,7 +52,7 @@ export default function AboutPage() {
               ['5', 'Product categories'],
               ['100%', 'Discreet packaging'],
               ['10K+', 'Customers served'],
-              ['48h', 'Dispatch time'],
+              ['72h', 'Dispatch time'],
             ].map(([val, label]) => (
               <FadeUp key={label}>
                 <div>
@@ -72,13 +72,13 @@ export default function AboutPage() {
           <h2 className="h-display mb-6 text-2xl md:text-3xl">Our story</h2>
           <div className="space-y-5 leading-relaxed text-bone-muted">
             <p>
-              K2LiquidStore was founded on a simple premise: getting strong, high-quality K2 products shouldn&apos;t be complicated or risky. We set out to build a store that pairs consistent product with the speed and discretion customers expect.
+              K2SolutionPro was founded on a simple premise: getting strong, high-quality K2 products shouldn&apos;t be complicated or risky. We set out to build a store that pairs consistent product with the speed and discretion customers expect.
             </p>
             <p>
               Today our catalog focuses on <strong className="text-bone">K2 paper sheets, K2 liquid spray, cannabinoid K2 powder, research-grade etomidate and K-Pods</strong>. Every batch we stock is quality-checked before it&apos;s listed, so you get the same strong product every time.
             </p>
             <p>
-              Our team understands what reliable supply means. Orders are packed in plain unmarked packaging, dispatched within 48 hours, and shipped discreetly to over 50 countries.
+              Our team understands what reliable supply means. Orders are packed in plain unmarked packaging, dispatched within 72 hours, and shipped discreetly to over 50 countries.
             </p>
           </div>
         </FadeUp>
@@ -109,11 +109,11 @@ export default function AboutPage() {
             },
             {
               title: 'Worldwide reach, local speed',
-              text: 'Express and standard courier options to most countries. Every shipment includes tracking from door to door. Our average dispatch time is under 48 hours from confirmation.',
+              text: 'Express and standard courier options to most countries. Every shipment includes tracking from door to door. Our average dispatch time is under 72 hours from confirmation.',
             },
             {
               title: 'Dedicated customer support',
-              text: 'Our support team responds quickly via WhatsApp and Telegram. Whether you need help choosing a product or resolving a shipping issue, we are here to help.',
+              text: 'Our support team responds quickly via WhatsApp and email. Whether you need help choosing a product or resolving a shipping issue, we are here to help.',
             },
             {
               title: 'Focused catalog',
@@ -148,7 +148,7 @@ export default function AboutPage() {
             {[
               ['Quality-checked batches', 'Every batch is inspected before listing to keep quality consistent.'],
               ['No substitutions — ever', 'You receive exactly what you order, every time. No silent swaps.'],
-              ['48-hour dispatch', 'Orders are processed and dispatched within two business days of confirmation.'],
+              ['72-hour dispatch', 'Orders are processed and dispatched within three business days of confirmation.'],
               ['Plain packaging worldwide', 'Discreet, unmarked parcels on every shipment, to every destination.'],
             ].map(([title, desc], i) => (
               <FadeUp key={title} delay={i * 0.06}>
@@ -176,7 +176,7 @@ export default function AboutPage() {
             <Link href="/products" className="btn-volt group">
               Browse products <HiOutlineArrowRight size={14} className="transition-transform group-hover:translate-x-1" />
             </Link>
-            <a href="https://wa.me/15125922145" target="_blank" rel="noopener noreferrer" className="btn-ghost">
+            <a href="https://wa.me/17406027691" target="_blank" rel="noopener noreferrer" className="btn-ghost">
               Contact us
             </a>
           </div>

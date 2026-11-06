@@ -2,12 +2,12 @@ import Link from 'next/link';
 import { FaCheckCircle, FaTimesCircle } from 'react-icons/fa';
 
 export const metadata = {
-  metadataBase: new URL(process.env.NEXT_PUBLIC_BASE_URL || 'https://k2liquidstore.com'),
+  metadataBase: new URL(process.env.NEXT_PUBLIC_BASE_URL || 'https://k2solutionpro.com'),
   title: 'Return & Refund Policy',
-  description: 'Read the K2LiquidStore return and refund policy for K2 paper, spray, powder and etomidate. Learn how to request returns for defective, damaged or incorrect products within 48 hours.',
+  description: 'Read the K2SolutionPro return and refund policy for K2 paper, spray, powder and etomidate. Learn how to request returns for defective, damaged or incorrect products within 48 hours.',
   keywords: [
     'return policy', 'refund policy', 'k2 product returns',
-    'defective products', 'K2LiquidStore refund',
+    'defective products', 'K2SolutionPro refund',
   ],
   alternates: { canonical: '/refund' },
 };
@@ -115,7 +115,7 @@ export default function RefundPolicyPage() {
           <h3 className="mb-3 font-display text-base font-bold uppercase tracking-wide text-bone">How to Request a Return</h3>
           <div className="space-y-4 mb-8">
             {[
-              { title: 'Contact Us Immediately', desc: 'Message us on WhatsApp or Telegram with your order number, product name, and reason.' },
+              { title: 'Contact Us Immediately', desc: 'Message us on WhatsApp or by email with your order number, product name, and reason.' },
               { title: 'Provide Evidence', desc: 'Take clear photos of the product, packaging, and any damage.' },
               { title: 'Wait for Approval', desc: 'Our team reviews your request within 24-48 hours.' },
               { title: 'Receive Return Authorization', desc: 'If approved, you get an RA number. Do NOT return items without one.' },
@@ -266,7 +266,7 @@ export default function RefundPolicyPage() {
                 <li key={item} className="flex gap-2"><span className="w-1 h-1 rounded-full bg-signal shrink-0 mt-2" />{item}</li>
               ))}
             </ul>
-            <p className="font-bold">Please contact us first on <a href="https://wa.me/15125922145" target="_blank" rel="noopener noreferrer" className="text-volt hover:underline">WhatsApp</a> or <a href="https://t.me/cannachem" target="_blank" rel="noopener noreferrer" className="text-volt hover:underline">Telegram</a>.</p>
+            <p className="font-bold">Please contact us first on <a href="https://wa.me/17406027691" target="_blank" rel="noopener noreferrer" className="text-volt hover:underline">WhatsApp</a> or by <a href="mailto:order@k2solutionpro.com" className="text-volt hover:underline">email</a>.</p>
           </div>
         </section>
 
@@ -275,8 +275,8 @@ export default function RefundPolicyPage() {
           <h2 className="mb-4 font-display text-2xl font-extrabold tracking-tight text-bone">8. Contact Us for Returns</h2>
           <p className="mb-5">Have questions or need to start a return?</p>
           <div className="border border-line rounded-xl p-5 space-y-2 text-sm mb-6">
-            <p><strong>WhatsApp:</strong> <a href="https://wa.me/15125922145" target="_blank" rel="noopener noreferrer" className="text-volt hover:underline">+1 512-592-2145</a></p>
-            <p><strong>Telegram:</strong> <a href="https://t.me/cannachem" target="_blank" rel="noopener noreferrer" className="text-volt hover:underline">@cannachem</a></p>
+            <p><strong>WhatsApp:</strong> <a href="https://wa.me/17406027691" target="_blank" rel="noopener noreferrer" className="text-volt hover:underline">+1 740-602-7691</a></p>
+            <p><strong>Email:</strong> <a href="mailto:order@k2solutionpro.com" className="text-volt hover:underline">order@k2solutionpro.com</a></p>
             <p><strong>Subject Line:</strong> Return Request - Order #[Your Order Number]</p>
             <p><strong>Response Time:</strong> Within 24 hours</p>
           </div>

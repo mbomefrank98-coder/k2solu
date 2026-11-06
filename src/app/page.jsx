@@ -6,19 +6,19 @@ import { getOrganizationSchema, getWebsiteSchema } from '@/components/seo/SEOKey
 
 export const dynamic = 'force-dynamic';
 
-const BASE_URL = process.env.NEXT_PUBLIC_BASE_URL || 'https://k2liquidstore.com';
+const BASE_URL = process.env.NEXT_PUBLIC_BASE_URL || 'https://k2solutionpro.com';
 
 export const metadata = {
   metadataBase: new URL(BASE_URL),
   title: 'Buy K2 Paper, Liquid Spray, Powder, Etomidate & K-Pods Online',
-  description: 'Buy K2 paper sheets, K2 liquid spray, cannabinoid K2 powder, research-grade etomidate, vapes and K-Pods online at K2LiquidStore.com. Premium quality and discreet worldwide shipping.',
+  description: 'Buy K2 paper sheets, K2 liquid spray, cannabinoid K2 powder, research-grade etomidate, vapes and K-Pods online at K2SolutionPro.com. Premium quality and discreet worldwide shipping.',
   keywords: [
     'k2 paper sheets', 'k2 paper', 'k2 infused paper', 'k2 spice paper',
     'k2 liquid spray', 'k2 spray', 'liquid k2', 'k2 spice',
     'k2 powder', 'cannabinoids k2 powder',
     'etomidate', 'etomidate powder', 'etomidate crystal', 'buy etomidate',
     'etomidate vape', 'k-pods', 'etomidate k-pods', 'vape pods',
-    'buy k2 online', 'k2 for sale', 'k2liquidstore',
+    'buy k2 online', 'k2 for sale', 'k2solutionpro',
   ],
   alternates: {
     canonical: BASE_URL,
@@ -27,21 +27,21 @@ export const metadata = {
     type: 'website',
     locale: 'en_US',
     url: BASE_URL,
-    siteName: 'K2LiquidStore',
-    title: 'Buy K2 Paper, Liquid Spray, Powder, Etomidate & K-Pods Online | K2LiquidStore',
+    siteName: 'K2SolutionPro',
+    title: 'Buy K2 Paper, Liquid Spray, Powder, Etomidate & K-Pods Online | K2SolutionPro',
     description: 'Premium K2 paper sheets, K2 liquid spray, K2 powder, research-grade etomidate and K-Pods. Worldwide discreet shipping.',
     images: [
       {
         url: `${BASE_URL}/images/logo.png`,
         width: 1200,
         height: 630,
-        alt: 'K2LiquidStore — K2 Paper, Spray, Powder, Etomidate & K-Pods',
+        alt: 'K2SolutionPro — K2 Paper, Spray, Powder, Etomidate & K-Pods',
       },
     ],
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'Buy K2, Etomidate & K-Pods Online | K2LiquidStore',
+    title: 'Buy K2, Etomidate & K-Pods Online | K2SolutionPro',
     description: 'Premium K2 paper sheets, liquid spray, powder, etomidate and K-Pods. Worldwide discreet shipping.',
     images: [`${BASE_URL}/images/logo.png`],
   },

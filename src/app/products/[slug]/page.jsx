@@ -71,7 +71,7 @@ export async function generateMetadata({ params }) {
     return { title: 'Product Not Found' };
   }
 
-  const baseUrl = process.env.NEXT_PUBLIC_BASE_URL || 'https://k2liquidstore.com';
+  const baseUrl = process.env.NEXT_PUBLIC_BASE_URL || 'https://k2solutionpro.com';
   const absoluteImage = product.images?.[0]?.startsWith('http')
     ? product.images[0]
     : `${baseUrl}${product.images?.[0] || '/images/logo.png'}`;
@@ -80,17 +80,17 @@ export async function generateMetadata({ params }) {
     title: product.name,
     description:
       product.description?.slice(0, 155) ||
-      `Buy ${product.name} online at K2LiquidStore. Discreet worldwide shipping.`,
+      `Buy ${product.name} online at K2SolutionPro. Discreet worldwide shipping.`,
     keywords: [
       product.name,
       `${product.name} for sale`,
       `buy ${product.name} online`,
       product.category,
-      'K2LiquidStore',
+      'K2SolutionPro',
     ],
     alternates: { canonical: `/products/${slug}` },
     openGraph: {
-      title: `${product.name} | K2LiquidStore`,
+      title: `${product.name} | K2SolutionPro`,
       description: product.description?.slice(0, 155) || `Buy ${product.name} online.`,
       url: `/products/${slug}`,
       type: 'website',

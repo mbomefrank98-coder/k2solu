@@ -1,11 +1,11 @@
 import Link from 'next/link';
 
 export const metadata = {
-  metadataBase: new URL(process.env.NEXT_PUBLIC_BASE_URL || 'https://k2liquidstore.com'),
+  metadataBase: new URL(process.env.NEXT_PUBLIC_BASE_URL || 'https://k2solutionpro.com'),
   title: 'Terms & Conditions',
-  description: 'Read the K2LiquidStore Terms and Conditions. Learn our policies for purchasing K2 paper sheets, K2 liquid spray, cannabinoid K2 powder and etomidate.',
+  description: 'Read the K2SolutionPro Terms and Conditions. Learn our policies for purchasing K2 paper sheets, K2 liquid spray, cannabinoid K2 powder and etomidate.',
   keywords: [
-    'terms and conditions', 'terms of service', 'K2LiquidStore terms',
+    'terms and conditions', 'terms of service', 'K2SolutionPro terms',
     'k2 paper terms', 'buy k2 online',
   ],
   alternates: { canonical: '/terms' },
@@ -29,7 +29,7 @@ export default function TermsPage() {
           <p className="tag mb-4">legal</p>
           <h1 className="h-display mb-4 text-4xl md:text-5xl">Terms &amp; Conditions</h1>
           <p className="max-w-xl text-base leading-relaxed text-bone-muted">
-            By using K2LiquidStore you agree to be bound by these terms. Please read them carefully before placing an order.
+            By using K2SolutionPro you agree to be bound by these terms. Please read them carefully before placing an order.
           </p>
           <p className="mt-4 font-mono text-[11px] uppercase tracking-[0.14em] text-bone-faint">Last updated: December 3, 2025</p>
         </div>
@@ -40,8 +40,8 @@ export default function TermsPage() {
 
         <section>
           <h2 className="mb-4 font-display text-2xl font-extrabold tracking-tight text-bone">1. Agreement to Terms</h2>
-          <p className="mb-4">Welcome to K2LiquidStore. By accessing or using our website, mobile application, or services (collectively, the &ldquo;Services&rdquo;), you agree to be bound by these Terms and Conditions. If you do not agree, please do not use our Services.</p>
-          <p className="mb-4">These Terms constitute a legally binding agreement between you and K2LiquidStore.</p>
+          <p className="mb-4">Welcome to K2SolutionPro. By accessing or using our website, mobile application, or services (collectively, the &ldquo;Services&rdquo;), you agree to be bound by these Terms and Conditions. If you do not agree, please do not use our Services.</p>
+          <p className="mb-4">These Terms constitute a legally binding agreement between you and K2SolutionPro.</p>
           <div className="border border-signal/40 bg-signal/10 rounded-xl p-4 text-sm text-bone-muted">
             <strong>Important:</strong> Our products are intended for research and laboratory use only. Not for human consumption.
           </div>
@@ -76,7 +76,7 @@ export default function TermsPage() {
 
           <h3 className="mb-3 font-display text-base font-bold uppercase tracking-wide text-bone">Research Use Only</h3>
           <div className="border border-signal/40 bg-signal/10 rounded-xl p-4 text-sm text-bone-muted mb-6">
-            <p className="font-bold mb-2">All products sold on K2LiquidStore are:</p>
+            <p className="font-bold mb-2">All products sold on K2SolutionPro are:</p>
             <ul className="space-y-1 ml-1">
               {['Intended for research and laboratory use ONLY','NOT for human or animal consumption','NOT for medical, therapeutic, or recreational use','To be handled by qualified professionals only','Subject to proper storage and handling requirements'].map(i=><li key={i} className="flex gap-2"><span className="w-1 h-1 rounded-full bg-signal shrink-0 mt-2" />{i}</li>)}
             </ul>
@@ -95,7 +95,7 @@ export default function TermsPage() {
           <p className="mb-6">Your order is an offer to purchase. We reserve the right to accept or reject any order. Order confirmation does not guarantee acceptance.</p>
           <h3 className="mb-3 font-display text-base font-bold uppercase tracking-wide text-bone">Payment</h3>
           <ul className="space-y-2 ml-1 mb-6">
-            {['Payment must be made at the time of order','We accept bank transfer, Bitcoin, Ethereum, and other agreed methods','All payments are processed securely','You authorize us to charge your payment method for the total amount','Payment information must be accurate and current'].map(i=><li key={i} className="flex gap-3"><Dot /><span>{i}</span></li>)}
+            {['Payment must be made at the time of order','We accept Apple Pay, Bitcoin, Ethereum, and other agreed methods','All payments are processed securely','You authorize us to charge your payment method for the total amount','Payment information must be accurate and current'].map(i=><li key={i} className="flex gap-3"><Dot /><span>{i}</span></li>)}
           </ul>
           <h3 className="mb-3 font-display text-base font-bold uppercase tracking-wide text-bone">Order Verification</h3>
           <p>We may require additional verification, including proof of identity, research credentials, or institutional affiliation.</p>
@@ -130,7 +130,7 @@ export default function TermsPage() {
 
         <section>
           <h2 className="mb-4 font-display text-2xl font-extrabold tracking-tight text-bone">9. Intellectual Property</h2>
-          <p className="mb-4">All content on our website is owned by or licensed to K2LiquidStore and protected by copyright, trademark, and other IP laws.</p>
+          <p className="mb-4">All content on our website is owned by or licensed to K2SolutionPro and protected by copyright, trademark, and other IP laws.</p>
           <p className="mb-3">We grant you a limited, non-exclusive, non-transferable license for personal, non-commercial use. You may not:</p>
           <ul className="space-y-2 ml-1">
             {['Reproduce, distribute, or modify our content','Use our trademarks or branding without permission','Create derivative works from our content','Reverse engineer or decompile our software'].map(i=><li key={i} className="flex gap-3"><Dot /><span>{i}</span></li>)}
@@ -162,7 +162,7 @@ export default function TermsPage() {
 
         <section>
           <h2 className="mb-4 font-display text-2xl font-extrabold tracking-tight text-bone">12. Indemnification</h2>
-          <p className="mb-4">You agree to indemnify, defend, and hold harmless K2LiquidStore from any claims, damages, losses, liabilities, and expenses arising from:</p>
+          <p className="mb-4">You agree to indemnify, defend, and hold harmless K2SolutionPro from any claims, damages, losses, liabilities, and expenses arising from:</p>
           <ul className="space-y-2 ml-1">
             {['Your use or misuse of our Services or products','Violation of these Terms','Violation of any laws or regulations','Infringement of third-party rights','Your negligence or willful misconduct'].map(i=><li key={i} className="flex gap-3"><Dot /><span>{i}</span></li>)}
           </ul>
@@ -170,7 +170,7 @@ export default function TermsPage() {
 
         <section>
           <h2 className="mb-4 font-display text-2xl font-extrabold tracking-tight text-bone">13. Dispute Resolution</h2>
-          <p className="mb-4">Before filing a claim, you agree to contact us on <a href="https://wa.me/15125922145" target="_blank" rel="noopener noreferrer" className="text-volt hover:underline">WhatsApp</a> or <a href="https://t.me/cannachem" target="_blank" rel="noopener noreferrer" className="text-volt hover:underline">Telegram</a> to attempt to resolve the dispute informally.</p>
+          <p className="mb-4">Before filing a claim, you agree to contact us on <a href="https://wa.me/17406027691" target="_blank" rel="noopener noreferrer" className="text-volt hover:underline">WhatsApp</a> or by <a href="mailto:order@k2solutionpro.com" className="text-volt hover:underline">email</a> to attempt to resolve the dispute informally.</p>
           <p className="mb-4">Disputes that cannot be resolved informally shall be resolved through binding arbitration in accordance with applicable rules.</p>
           <p>You agree to resolve disputes on an individual basis and waive the right to participate in class actions or class arbitrations.</p>
         </section>
@@ -192,15 +192,15 @@ export default function TermsPage() {
 
         <section>
           <h2 className="mb-4 font-display text-2xl font-extrabold tracking-tight text-bone">17. Entire Agreement</h2>
-          <p>These Terms, together with our Privacy Policy and any other legal notices on our website, constitute the entire agreement between you and K2LiquidStore.</p>
+          <p>These Terms, together with our Privacy Policy and any other legal notices on our website, constitute the entire agreement between you and K2SolutionPro.</p>
         </section>
 
         <section>
           <h2 className="mb-4 font-display text-2xl font-extrabold tracking-tight text-bone">18. Contact Us</h2>
           <p className="mb-5">If you have questions about these Terms, please contact us:</p>
           <div className="border border-line rounded-xl p-5 space-y-2 text-sm">
-            <p><strong>WhatsApp:</strong> <a href="https://wa.me/15125922145" target="_blank" rel="noopener noreferrer" className="text-volt hover:underline">+1 512-592-2145</a></p>
-            <p><strong>Telegram:</strong> <a href="https://t.me/cannachem" target="_blank" rel="noopener noreferrer" className="text-volt hover:underline">@cannachem</a></p>
+            <p><strong>WhatsApp:</strong> <a href="https://wa.me/17406027691" target="_blank" rel="noopener noreferrer" className="text-volt hover:underline">+1 740-602-7691</a></p>
+            <p><strong>Email:</strong> <a href="mailto:order@k2solutionpro.com" className="text-volt hover:underline">order@k2solutionpro.com</a></p>
             <p><strong>Response Time:</strong> We aim to respond within 48 hours</p>
           </div>
         </section>

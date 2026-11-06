@@ -60,7 +60,7 @@ export default function RegisterPage() {
         <div className="mb-8 text-center">
           <p className="tag mb-4">account.register</p>
           <h1 className="h-display text-3xl">Create an account</h1>
-          <p className="mt-2 text-sm text-bone-muted">Join K2LiquidStore for premium K2 paper, spray and powder</p>
+          <p className="mt-2 text-sm text-bone-muted">Join K2SolutionPro for premium K2 paper, spray and powder</p>
         </div>
 
         <div className="cell p-7 sm:p-8">

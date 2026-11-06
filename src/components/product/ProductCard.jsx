@@ -4,8 +4,7 @@ import Image from 'next/image';
 import Link from 'next/link';
 import { useState } from 'react';
 import { motion } from 'framer-motion';
-import { FaStar } from 'react-icons/fa';
-import { FiArrowUpRight } from 'react-icons/fi';
+import { FaStar, FaShoppingCart } from 'react-icons/fa';
 
 export default function ProductCard({ product }) {
   const [isHovered, setIsHovered] = useState(false);
@@ -21,6 +20,7 @@ export default function ProductCard({ product }) {
       ? product.priceVariants.reduce((min, v) => v.price < min ? v.price : min, product.priceVariants[0]?.price || 0)
       : 0;
 
+  const variants = product.priceVariants || [];
   const href = `/products/${product.slug || product._id}`;
   const inStock = product.countInStock > 0;
 
@@ -28,18 +28,18 @@ export default function ProductCard({ product }) {
     <motion.div
       onHoverStart={() => setIsHovered(true)}
       onHoverEnd={() => setIsHovered(false)}
-      className="group relative flex h-full flex-col border border-line bg-night-800 transition-colors duration-200 hover:border-volt"
+      className="group relative flex h-full flex-col rounded-3xl border border-line bg-night-800/60 p-2 transition-all duration-300 hover:-translate-y-1.5 hover:border-volt/50 hover:shadow-glow"
     >
-      {/* Image */}
+      {/* Inset image */}
       <Link
         href={href}
-        className="relative block h-52 w-full overflow-hidden border-b border-line bg-night-700"
+        className="relative block h-48 w-full overflow-hidden rounded-2xl bg-night-700"
         aria-label={`View ${product.name}`}
       >
         {product.images && product.images.length > 0 ? (
           <motion.div
-            animate={{ scale: isHovered ? 1.05 : 1 }}
-            transition={{ duration: 0.4 }}
+            animate={{ scale: isHovered ? 1.08 : 1 }}
+            transition={{ duration: 0.5, ease: 'easeOut' }}
             className="h-full w-full"
           >
             <Image
@@ -54,38 +54,43 @@ export default function ProductCard({ product }) {
             />
           </motion.div>
         ) : (
-          <div className="absolute inset-0 flex items-center justify-center">
-            <span className="font-mono text-[11px] uppercase tracking-[0.2em] text-bone-faint">No image</span>
+          <div className="absolute inset-0 grid place-items-center">
+            <span className="text-[11px] uppercase tracking-[0.2em] text-bone-faint">No image</span>
           </div>
         )}
 
-        {/* Category badge */}
-        {product.category && (
-          <span className="absolute left-3 top-3 border border-line bg-night-950/90 px-2.5 py-1 font-mono text-[10px] uppercase tracking-[0.14em] text-volt backdrop-blur-sm">
-            {product.category}
+        {/* Price pill */}
+        <span className="absolute right-2.5 top-2.5 rounded-full bg-night-950/80 px-3 py-1.5 font-display text-sm font-bold text-volt backdrop-blur-sm">
+          {variants.length > 1 && <span className="mr-1 text-[10px] font-medium text-bone-muted">from</span>}
+          &euro;{displayPrice.toFixed(2)}
+        </span>
+
+        {product.featured && inStock && (
+          <span className="absolute left-2.5 top-2.5 rounded-full bg-brand-gradient px-3 py-1 text-[10px] font-bold uppercase tracking-[0.12em] text-volt-ink shadow-glow-sm">
+            Featured
           </span>
         )}
 
         {/* Out of stock */}
         {!inStock && (
           <div className="absolute inset-0 flex items-center justify-center bg-night-950/70 backdrop-blur-[2px]">
-            <span className="border border-signal bg-night-950 px-4 py-1.5 font-mono text-[11px] uppercase tracking-[0.16em] text-signal">
+            <span className="rounded-full border border-signal/60 bg-night-950 px-4 py-1.5 text-[11px] font-semibold uppercase tracking-[0.14em] text-signal">
               Sold out
             </span>
           </div>
         )}
       </Link>
 
-      {/* Content */}
-      <div className="flex flex-1 flex-col p-4">
+      {/* Body */}
+      <div className="flex flex-1 flex-col px-3 pb-3 pt-4">
+        {/* Name + rating */}
         <Link href={href}>
-          <h3 className="mb-1 line-clamp-1 font-display text-sm font-bold leading-snug text-bone transition-colors group-hover:text-volt">
+          <h3 className="line-clamp-1 font-display text-[15px] font-semibold leading-snug text-bone transition-colors group-hover:text-volt">
             {product.name || 'Unnamed Product'}
           </h3>
         </Link>
 
-        {/* Rating */}
-        <div className="mb-3 flex items-center gap-1.5">
+        <div className="mt-1.5 flex items-center gap-1.5">
           <div className="flex">
             {[...Array(5)].map((_, i) => (
               <FaStar
@@ -94,23 +99,44 @@ export default function ProductCard({ product }) {
               />
             ))}
           </div>
-          <span className="font-mono text-[10px] text-bone-faint">({product.numReviews ?? 0})</span>
+          <span className="text-[11px] text-bone-faint">({product.numReviews ?? 0})</span>
+          {inStock && (
+            <span className="ml-auto flex items-center gap-1.5 text-[11px] text-volt">
+              <span className="h-1.5 w-1.5 rounded-full bg-volt animate-pulse2" /> In stock
+            </span>
+          )}
         </div>
 
-        {/* Price + button */}
-        <div className="mt-auto flex items-center justify-between border-t border-line pt-3">
-          <div>
-            <span className="font-display text-lg font-extrabold text-bone">&euro;{displayPrice.toFixed(2)}</span>
-            {product.priceVariants && product.priceVariants.length > 1 && (
-              <span className="ml-1 font-mono text-[10px] text-bone-faint">from</span>
+        {/* Variant pills */}
+        {variants.length > 0 && (
+          <div className="mt-3.5 flex flex-wrap gap-1.5">
+            {variants.slice(0, 3).map((v, i) => (
+              <span key={i} className="rounded-full border border-line bg-night-900/60 px-2.5 py-1 text-[10px] font-medium text-bone-muted">
+                {v.label || `${v.quantity}g`}
+              </span>
+            ))}
+            {variants.length > 3 && (
+              <span className="rounded-full border border-line bg-night-900/60 px-2.5 py-1 text-[10px] font-medium text-bone-faint">
+                +{variants.length - 3} more
+              </span>
             )}
           </div>
-          <Link
-            href={href}
-            className="inline-flex items-center gap-1.5 border border-line-strong px-3.5 py-2 font-mono text-[11px] uppercase tracking-[0.14em] text-bone transition-colors hover:border-volt hover:text-volt"
-          >
-            View <FiArrowUpRight className="h-3.5 w-3.5" />
-          </Link>
+        )}
+
+        {/* CTA */}
+        <div className="mt-auto pt-4">
+          {inStock ? (
+            <Link
+              href={href}
+              className="flex w-full items-center justify-center gap-2 rounded-2xl bg-brand-gradient py-3 text-[13px] font-bold text-volt-ink shadow-glow-sm transition-all hover:shadow-glow hover:brightness-110 active:scale-[0.98]"
+            >
+              <FaShoppingCart className="h-3.5 w-3.5" /> Order now
+            </Link>
+          ) : (
+            <span className="flex w-full items-center justify-center rounded-2xl border border-line-strong py-3 text-[13px] font-semibold text-bone-faint">
+              Sold out
+            </span>
+          )}
         </div>
       </div>
     </motion.div>

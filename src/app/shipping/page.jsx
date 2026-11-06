@@ -2,13 +2,13 @@ import Link from 'next/link';
 import { FaShippingFast, FaGlobeAmericas, FaShieldAlt, FaCheckCircle } from 'react-icons/fa';
 
 export const metadata = {
-  metadataBase: new URL(process.env.NEXT_PUBLIC_BASE_URL || 'https://k2liquidstore.com'),
+  metadataBase: new URL(process.env.NEXT_PUBLIC_BASE_URL || 'https://k2solutionpro.com'),
   title: 'Shipping & Delivery Policy',
-  description: 'Learn about K2LiquidStore shipping methods, delivery times, discreet international shipping, order tracking and free shipping on orders over €100 for K2 paper, spray, powder and etomidate.',
+  description: 'Learn about K2SolutionPro shipping methods, delivery times, discreet international shipping, order tracking and free shipping on orders over €100 for K2 paper, spray, powder and etomidate.',
   keywords: [
     'k2 paper shipping', 'discreet shipping', 'international shipping',
-    'buy k2 online delivery', 'etomidate shipping', 'K2LiquidStore shipping',
-    'track order', '48h dispatch',
+    'buy k2 online delivery', 'etomidate shipping', 'K2SolutionPro shipping',
+    'track order', '72h dispatch',
   ],
   alternates: { canonical: '/shipping' },
 };
@@ -31,7 +31,7 @@ export default function ShippingPolicyPage() {
             Fast, discreet delivery to your door.
           </h1>
           <p className="max-w-xl text-base leading-relaxed text-bone-muted">
-            Every order is dispatched within 48 hours in plain, unmarked packaging. We ship to 50+ countries with full tracking on every parcel.
+            Every order is dispatched within 72 hours in plain, unmarked packaging. We ship to 50+ countries with full tracking on every parcel.
           </p>
           <p className="mt-4 font-mono text-[11px] uppercase tracking-[0.14em] text-bone-faint">Last updated: December 3, 2025</p>
         </div>
@@ -42,7 +42,7 @@ export default function ShippingPolicyPage() {
         <div className="wrap max-w-3xl py-8">
           <div className="grid grid-cols-1 gap-6 sm:grid-cols-3">
             {[
-              { Icon: FaShippingFast, title: '48h Dispatch', desc: 'Orders processed within 24-48 hours' },
+              { Icon: FaShippingFast, title: '72h Dispatch', desc: 'Orders processed within 72 hours' },
               { Icon: FaShieldAlt, title: 'Discreet Packaging', desc: 'Unmarked, tamper-evident parcels' },
               { Icon: FaGlobeAmericas, title: 'Worldwide Reach', desc: 'Standard & express to 50+ countries' },
             ].map(({ Icon, title, desc }) => (
@@ -136,7 +136,7 @@ export default function ShippingPolicyPage() {
           <ul className="space-y-2 ml-1">
             {[
               ['Unmarked Packaging', 'Plain, neutral boxes or envelopes with no branding'],
-              ['Generic Sender Name', 'No mention of "K2LiquidStore" on the package'],
+              ['Generic Sender Name', 'No mention of "K2SolutionPro" on the package'],
               ['Secure Sealing', 'Tamper-evident packaging to ensure product integrity'],
               ['Proper Cushioning', 'Products are carefully packed to prevent damage'],
               ['Confidential Labels', 'No product descriptions on shipping labels'],
@@ -214,8 +214,8 @@ export default function ShippingPolicyPage() {
 
           <div className="border border-volt/30 bg-volt/5 rounded-xl p-4 text-sm text-bone mb-6">
             <strong>Shipping Restrictions:</strong> Please message us on{' '}
-            <a href="https://wa.me/15125922145" target="_blank" rel="noopener noreferrer" className="underline">WhatsApp</a> or{' '}
-            <a href="https://t.me/cannachem" target="_blank" rel="noopener noreferrer" className="underline">Telegram</a>{' '}
+            <a href="https://wa.me/17406027691" target="_blank" rel="noopener noreferrer" className="underline">WhatsApp</a> or by{' '}
+            <a href="mailto:order@k2solutionpro.com" className="underline">email</a>{' '}
             to verify if we can ship to your country before placing an order.
           </div>
 
@@ -246,7 +246,7 @@ export default function ShippingPolicyPage() {
             <li>Look for delivery notices or alternative drop-off locations</li>
             <li>Wait 24 hours as carriers sometimes mark packages delivered early</li>
             <li>Contact the shipping carrier directly with your tracking number</li>
-            <li>If still missing after 48 hours, contact us on <a href="https://wa.me/15125922145" target="_blank" rel="noopener noreferrer" className="text-volt hover:underline">WhatsApp</a> or <a href="https://t.me/cannachem" target="_blank" rel="noopener noreferrer" className="text-volt hover:underline">Telegram</a></li>
+            <li>If still missing after 48 hours, contact us on <a href="https://wa.me/17406027691" target="_blank" rel="noopener noreferrer" className="text-volt hover:underline">WhatsApp</a> or by <a href="mailto:order@k2solutionpro.com" className="text-volt hover:underline">email</a></li>
           </ol>
           <div className="border border-signal/40 bg-signal/10 rounded-xl p-4 text-sm text-bone-muted mb-6">
             <strong>Note:</strong> We are not responsible for packages stolen after delivery confirmation. Consider using a secure delivery location.
@@ -309,8 +309,8 @@ export default function ShippingPolicyPage() {
           <h2 className="mb-4 font-display text-2xl font-extrabold tracking-tight text-bone">8. Shipping Support</h2>
           <p className="mb-5">Need help with your shipment? We&apos;re here to assist:</p>
           <div className="border border-line rounded-xl p-5 space-y-2 text-sm mb-6">
-            <p><strong>WhatsApp:</strong> <a href="https://wa.me/15125922145" target="_blank" rel="noopener noreferrer" className="text-volt hover:underline">+1 512-592-2145</a></p>
-            <p><strong>Telegram:</strong> <a href="https://t.me/cannachem" target="_blank" rel="noopener noreferrer" className="text-volt hover:underline">@cannachem</a></p>
+            <p><strong>WhatsApp:</strong> <a href="https://wa.me/17406027691" target="_blank" rel="noopener noreferrer" className="text-volt hover:underline">+1 740-602-7691</a></p>
+            <p><strong>Email:</strong> <a href="mailto:order@k2solutionpro.com" className="text-volt hover:underline">order@k2solutionpro.com</a></p>
             <p><strong>Response Time:</strong> Within 24 hours</p>
             <p className="text-bone-faint text-xs pt-2">Please include your order number and tracking information when contacting us about shipping issues.</p>
           </div>

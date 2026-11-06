@@ -18,7 +18,7 @@ export async function generateMetadata({ searchParams }) {
   const params = await searchParams;
   const category = params?.category || '';
   
-  const baseUrl = process.env.NEXT_PUBLIC_BASE_URL || 'https://k2liquidstore.com';
+  const baseUrl = process.env.NEXT_PUBLIC_BASE_URL || 'https://k2solutionpro.com';
   const catKey = category.toLowerCase();
   const catLabel = categoryMeta[catKey]?.label || category;
   const canonicalPath = catKey
@@ -33,18 +33,18 @@ export async function generateMetadata({ searchParams }) {
       ? `Buy ${catLabel} Online`
       : 'K2 Paper Sheets, K2 Liquid Spray, K2 Powder, Etomidate & K-Pods for Sale',
     description: catLabel
-      ? `Buy premium ${catLabel.toLowerCase()} online at K2LiquidStore. Strong, consistent quality with discreet worldwide shipping.`
-      : 'Buy K2 paper sheets, K2 liquid spray, K2 powder, etomidate, vapes and K-Pods online. Premium quality, discreet packaging and fast worldwide delivery from K2LiquidStore.',
-    keywords: `${categoryKeywords}, k2 paper, k2 spray, k2 liquid, k2 powder, k2 spice, cannabinoids k2, etomidate, etomidate powder, k2liquidstore`,
+      ? `Buy premium ${catLabel.toLowerCase()} online at K2SolutionPro. Strong, consistent quality with discreet worldwide shipping.`
+      : 'Buy K2 paper sheets, K2 liquid spray, K2 powder, etomidate, vapes and K-Pods online. Premium quality, discreet packaging and fast worldwide delivery from K2SolutionPro.',
+    keywords: `${categoryKeywords}, k2 paper, k2 spray, k2 liquid, k2 powder, k2 spice, cannabinoids k2, etomidate, etomidate powder, k2solutionpro`,
     alternates: {
       canonical: canonicalPath,
     },
     openGraph: {
       title: catLabel
-        ? `Buy ${catLabel} Online | K2LiquidStore`
-        : 'K2 Paper Sheets, K2 Liquid Spray, K2 Powder, Etomidate & K-Pods for Sale | K2LiquidStore',
+        ? `Buy ${catLabel} Online | K2SolutionPro`
+        : 'K2 Paper Sheets, K2 Liquid Spray, K2 Powder, Etomidate & K-Pods for Sale | K2SolutionPro',
       description: catLabel
-        ? `Browse premium ${catLabel.toLowerCase()} at K2LiquidStore. Discreet worldwide shipping.`
+        ? `Browse premium ${catLabel.toLowerCase()} at K2SolutionPro. Discreet worldwide shipping.`
         : 'Browse K2 paper sheets, K2 liquid spray, K2 powder, etomidate, vapes and K-Pods. Premium quality with discreet worldwide shipping.',
       url: canonicalPath,
       type: 'website',

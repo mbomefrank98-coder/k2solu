@@ -4,7 +4,10 @@ import { useState, useEffect } from 'react';
 import Link from 'next/link';
 import Image from 'next/image';
 import { useRouter } from 'next/navigation';
-import { FaTrash, FaArrowLeft, FaLock, FaShoppingCart } from 'react-icons/fa';
+import {
+  FaTrash, FaArrowLeft, FaLock, FaShoppingCart, FaBitcoin,
+  FaShieldAlt, FaShippingFast, FaMinus, FaPlus, FaWhatsapp, FaEnvelope, FaApplePay,
+} from 'react-icons/fa';
 import { useCart } from '@/components/cart/CartProvider';
 
 export default function CartPage() {
@@ -12,7 +15,6 @@ export default function CartPage() {
   const router = useRouter();
   const [mounted, setMounted] = useState(false);
 
-  // Fix hydration issues
   useEffect(() => {
     setMounted(true);
   }, []);
@@ -25,20 +27,22 @@ export default function CartPage() {
     router.push('/checkout');
   };
 
+  const itemCount = cart.reduce((s, i) => s + i.quantity, 0);
+
   if (cart.length === 0) {
     return (
-      <div className="min-h-screen bg-night-900">
-        <div className="wrap py-24">
-          <div className="mx-auto max-w-sm text-center">
-            <div className="mx-auto mb-6 flex h-20 w-20 items-center justify-center border border-line bg-night-800">
-              <FaShoppingCart className="text-3xl text-bone-faint" />
+      <div className="min-h-screen">
+        <div className="wrap py-20 sm:py-28">
+          <div className="cell mx-auto max-w-md p-10 text-center">
+            <div className="mx-auto mb-6 grid h-20 w-20 place-items-center rounded-3xl bg-brand-gradient-soft border border-volt/20">
+              <FaShoppingCart className="text-3xl text-volt" />
             </div>
-            <p className="tag mb-4">cart.empty</p>
+            <p className="tag mb-4 justify-center">Cart</p>
             <h1 className="h-display mb-3 text-3xl">Your cart is empty</h1>
-            <p className="mb-8 text-sm text-bone-muted">
-              Browse the catalog and add items to get started.
+            <p className="mb-8 text-sm leading-relaxed text-bone-muted">
+              Browse the catalog and add some products — they&apos;ll show up here.
             </p>
-            <Link href="/products" className="btn-volt">
+            <Link href="/products" className="btn-volt w-full">
               <FaArrowLeft className="h-3.5 w-3.5" /> Browse products
             </Link>
           </div>
@@ -48,10 +52,10 @@ export default function CartPage() {
   }
 
   return (
-    <div className="min-h-screen bg-night-900">
-      <div className="wrap py-12 sm:py-16">
+    <div className="min-h-screen">
+      <div className="wrap py-10 sm:py-14">
         {/* Header */}
-        <div className="mb-8 flex flex-wrap items-end justify-between gap-4 border-b border-line pb-6">
+        <div className="mb-8 flex flex-wrap items-end justify-between gap-4">
           <div>
             <nav className="mb-3 flex items-center gap-2 font-mono text-[11px] uppercase tracking-[0.16em] text-bone-faint" aria-label="Breadcrumb">
               <Link href="/" className="transition-colors hover:text-volt">Home</Link>
@@ -60,141 +64,181 @@ export default function CartPage() {
             </nav>
             <h1 className="h-display text-3xl sm:text-4xl">Shopping cart</h1>
           </div>
-          <span className="font-mono text-[11px] uppercase tracking-[0.16em] text-bone-muted">
-            <span className="text-volt">{cart.length}</span> {cart.length === 1 ? 'item' : 'items'}
+          <span className="rounded-full border border-volt/30 bg-volt/10 px-4 py-1.5 text-[12px] font-semibold text-volt">
+            {itemCount} {itemCount === 1 ? 'item' : 'items'}
           </span>
         </div>
 
-        <div className="grid grid-cols-1 gap-6 lg:grid-cols-3">
-          {/* Cart Items */}
-          <div className="space-y-3 lg:col-span-2">
-            {/* Table header */}
-            <div className="hidden grid-cols-12 gap-4 px-4 pb-1 font-mono text-[10px] uppercase tracking-[0.18em] text-bone-faint md:grid">
-              <div className="col-span-6">Product</div>
-              <div className="col-span-2 text-center">Price</div>
-              <div className="col-span-2 text-center">Qty</div>
-              <div className="col-span-2 text-right">Total</div>
-            </div>
+        <div className="grid grid-cols-1 gap-6 lg:grid-cols-[1.6fr_1fr]">
+          {/* Items */}
+          <div className="space-y-4">
+            {cart.map((item, index) => {
+              const unitPrice = Number(item.price ?? item.variant?.price ?? 0);
+              const lineTotal = unitPrice * item.quantity;
+              const variantLabel = item.variant?.label
+                || (item.variant?.grams ? `${item.variant.grams}g` : item.variant?.quantity ? `${item.variant.quantity}g` : '');
+              return (
+                <div key={`${item._id || item.id || index}`} className="cell group flex gap-4 p-4 sm:gap-5 sm:p-5">
+                  {/* Image */}
+                  <Link
+                    href={`/products/${item.slug || item.id}`}
+                    className="relative h-24 w-24 shrink-0 overflow-hidden rounded-2xl border border-line bg-night-700 sm:h-28 sm:w-28"
+                  >
+                    {item.image ? (
+                      <Image src={item.image} alt={item.name} fill sizes="112px" className="object-cover transition-transform duration-300 group-hover:scale-105" />
+                    ) : (
+                      <div className="absolute inset-0 grid place-items-center font-mono text-[10px] text-bone-faint">N/A</div>
+                    )}
+                  </Link>
 
-            {cart.map((item, index) => (
-              <div key={`${item._id || item.id || index}`} className="cell p-4">
-                <div className="grid grid-cols-12 items-center gap-4">
-                  <div className="col-span-12 md:col-span-6">
-                    <div className="flex items-center gap-3">
-                      <div className="relative h-14 w-14 flex-shrink-0 overflow-hidden border border-line bg-night-700">
-                        {item.image ? (
-                          <Image src={item.image} alt={item.name} fill sizes="56px" className="object-cover" />
-                        ) : (
-                          <div className="absolute inset-0 flex items-center justify-center font-mono text-[10px] text-bone-faint">N/A</div>
-                        )}
-                      </div>
-                      <div>
-                        <Link href={`/products/${item.slug || item.id}`} className="text-sm font-semibold leading-snug text-bone transition-colors hover:text-volt">
+                  {/* Details */}
+                  <div className="flex min-w-0 flex-1 flex-col">
+                    <div className="flex items-start justify-between gap-3">
+                      <div className="min-w-0">
+                        <Link
+                          href={`/products/${item.slug || item.id}`}
+                          className="line-clamp-2 font-display text-[15px] font-semibold leading-snug text-bone transition-colors hover:text-volt sm:text-base"
+                        >
                           {item.name}
                         </Link>
-                        {item.variant && (
-                          <p className="mt-0.5 font-mono text-[10px] uppercase tracking-[0.12em] text-bone-faint">
-                            {item.variant.label || (item.variant.grams ? `${item.variant.grams}g` : item.variant.quantity ? `${item.variant.quantity}g` : '')}
-                          </p>
+                        {variantLabel && (
+                          <span className="mt-1.5 inline-flex rounded-full border border-line px-2.5 py-0.5 text-[11px] font-medium text-bone-muted">
+                            {variantLabel}
+                          </span>
                         )}
                       </div>
+                      <button
+                        onClick={() => removeFromCart(item.id, item.variant?._id, item.variant?.grams)}
+                        className="grid h-8 w-8 shrink-0 place-items-center rounded-full text-bone-faint transition-colors hover:bg-signal/10 hover:text-signal"
+                        aria-label={`Remove ${item.name}`}
+                      >
+                        <FaTrash className="text-xs" />
+                      </button>
                     </div>
-                  </div>
 
-                  <div className="col-span-4 text-center font-mono text-sm text-bone-muted md:col-span-2">
-                    &euro;{Number(item.price ?? item.variant?.price ?? 0).toFixed(2)}
-                  </div>
-
-                  <div className="col-span-5 md:col-span-2">
-                    <div className="flex items-center justify-center">
-                      <div className="flex items-center border border-line-strong">
+                    <div className="mt-auto flex flex-wrap items-end justify-between gap-3 pt-3">
+                      {/* Qty stepper */}
+                      <div className="flex items-center rounded-full border border-line-strong">
                         <button
                           onClick={() => updateQuantity(item.id, item.quantity - 1, item.variant?._id)}
                           disabled={item.quantity <= 1}
-                          className="flex h-7 w-7 items-center justify-center text-bone transition-colors hover:text-volt disabled:opacity-30"
+                          className="grid h-8 w-8 place-items-center rounded-full text-bone transition-colors hover:text-volt disabled:opacity-30"
                           aria-label="Decrease quantity"
                         >
-                          &minus;
+                          <FaMinus className="h-2.5 w-2.5" />
                         </button>
-                        <input
-                          type="number"
-                          min="1"
-                          value={item.quantity}
-                          onChange={(e) => updateQuantity(item.id, parseInt(e.target.value) || 1, item.variant?._id)}
-                          className="w-10 border-0 border-x border-line-strong bg-transparent text-center text-sm text-bone focus:outline-none focus:ring-0"
-                        />
+                        <span className="w-8 text-center font-display text-sm font-bold text-bone">
+                          {item.quantity}
+                        </span>
                         <button
                           onClick={() => updateQuantity(item.id, item.quantity + 1, item.variant?._id)}
-                          className="flex h-7 w-7 items-center justify-center text-bone transition-colors hover:text-volt"
+                          className="grid h-8 w-8 place-items-center rounded-full text-bone transition-colors hover:text-volt"
                           aria-label="Increase quantity"
                         >
-                          +
+                          <FaPlus className="h-2.5 w-2.5" />
                         </button>
+                      </div>
+
+                      <div className="text-right">
+                        <p className="text-[11px] text-bone-faint">&euro;{unitPrice.toFixed(2)} each</p>
+                        <p className="font-display text-lg font-bold text-bone">&euro;{lineTotal.toFixed(2)}</p>
                       </div>
                     </div>
                   </div>
-
-                  <div className="col-span-3 flex items-center justify-end gap-3 text-right md:col-span-2">
-                    <span className="font-display text-sm font-bold text-bone">
-                      &euro;{(Number(item.price ?? item.variant?.price ?? 0) * item.quantity).toFixed(2)}
-                    </span>
-                    <button
-                      onClick={() => removeFromCart(item.id, item.variant?._id, item.variant?.grams)}
-                      className="text-bone-faint transition-colors hover:text-signal"
-                      aria-label={`Remove ${item.name}`}
-                    >
-                      <FaTrash className="text-xs" />
-                    </button>
-                  </div>
                 </div>
-              </div>
-            ))}
+              );
+            })}
 
-            <div className="flex items-center justify-between pt-2">
+            <div className="flex items-center justify-between pt-1">
               <button
                 onClick={clearCart}
-                className="font-mono text-[11px] uppercase tracking-[0.14em] text-bone-faint transition-colors hover:text-signal"
+                className="text-[12px] font-medium text-bone-faint transition-colors hover:text-signal"
               >
                 Clear all items
               </button>
               <Link
                 href="/products"
-                className="inline-flex items-center gap-2 font-mono text-[11px] uppercase tracking-[0.14em] text-volt transition-colors hover:text-bone"
+                className="inline-flex items-center gap-2 text-[12px] font-semibold text-volt transition-colors hover:text-bone"
               >
                 <FaArrowLeft className="h-3 w-3" /> Continue shopping
               </Link>
             </div>
           </div>
 
-          {/* Order Summary */}
+          {/* Summary */}
           <div className="lg:col-span-1">
-            <div className="cell sticky top-28 p-6">
-              <h2 className="mb-5 font-display text-base font-bold uppercase tracking-wide text-bone">
-                Order summary
-              </h2>
+            <div className="cell sticky top-28 overflow-hidden">
+              <div className="h-1 w-full bg-brand-gradient" />
+              <div className="p-6">
+                <h2 className="mb-5 font-display text-base font-semibold text-bone">
+                  Order summary
+                </h2>
 
-              <div className="mb-5 space-y-3 text-sm">
-                <div className="flex justify-between text-bone-muted">
-                  <span>Subtotal ({cart.length} items)</span>
-                  <span className="font-medium text-bone">&euro;{Number(cartTotal).toFixed(2)}</span>
+                <div className="mb-5 space-y-3 text-sm">
+                  <div className="flex justify-between text-bone-muted">
+                    <span>Subtotal ({itemCount} {itemCount === 1 ? 'item' : 'items'})</span>
+                    <span className="font-medium text-bone">&euro;{Number(cartTotal).toFixed(2)}</span>
+                  </div>
+                  <div className="flex justify-between text-bone-muted">
+                    <span>Shipping</span>
+                    <span className="text-bone-faint">calculated at checkout</span>
+                  </div>
+                  <div className="flex justify-between border-t border-line pt-3">
+                    <span className="font-semibold text-bone">Estimated total</span>
+                    <span className="font-display text-xl font-bold gradient-text">&euro;{Number(cartTotal).toFixed(2)}</span>
+                  </div>
                 </div>
-                <div className="flex justify-between text-bone-muted">
-                  <span>Shipping</span>
-                  <span className="text-bone-faint">calculated at checkout</span>
-                </div>
-                <div className="flex justify-between border-t border-line pt-3">
-                  <span className="font-semibold text-bone">Estimated total</span>
-                  <span className="font-display text-base font-extrabold text-volt">&euro;{Number(cartTotal).toFixed(2)}</span>
-                </div>
-              </div>
 
-              <button onClick={handleCheckout} className="btn-volt w-full">
-                <FaLock className="h-3.5 w-3.5" /> Proceed to checkout
-              </button>
+                <button onClick={handleCheckout} className="btn-volt w-full">
+                  <FaLock className="h-3.5 w-3.5" /> Proceed to checkout
+                </button>
 
-              <div className="mt-4 flex items-center justify-center gap-2 font-mono text-[10px] uppercase tracking-[0.14em] text-bone-faint">
-                <FaLock className="h-3 w-3 text-volt" />
-                <span>BTC only — no card data stored</span>
+                <div className="mt-3 flex items-center justify-center gap-4 text-[11px] text-bone-faint">
+                  <span className="inline-flex items-center gap-1.5">
+                    <FaBitcoin className="text-signal" /> BTC
+                  </span>
+                  <span className="inline-flex items-center gap-1">
+                    <FaApplePay className="text-sm text-bone" /> accepted
+                  </span>
+                  <span className="inline-flex items-center gap-1.5">
+                    <FaLock className="text-volt" /> Secure
+                  </span>
+                </div>
+
+                {/* Trust row */}
+                <div className="mt-5 space-y-2.5 border-t border-line pt-5">
+                  {[
+                    { Icon: FaShieldAlt, text: 'Discreet, scent-proof packaging' },
+                    { Icon: FaShippingFast, text: 'Tracked — dispatched within 72h' },
+                  ].map(({ Icon, text }) => (
+                    <p key={text} className="flex items-center gap-2.5 text-[12px] text-bone-muted">
+                      <Icon className="text-volt" /> {text}
+                    </p>
+                  ))}
+                </div>
+
+                {/* Quick order links */}
+                <div className="mt-5 border-t border-line pt-5">
+                  <p className="mb-3 text-[11px] font-semibold uppercase tracking-[0.14em] text-bone-faint">
+                    Prefer to order directly?
+                  </p>
+                  <div className="grid grid-cols-2 gap-2">
+                    <a
+                      href="https://wa.me/17406027691"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="btn-ghost !px-3 !py-2 !text-[12px]"
+                    >
+                      <FaWhatsapp /> WhatsApp
+                    </a>
+                    <a
+                      href="mailto:order@k2solutionpro.com?subject=Order%20request"
+                      className="btn-ghost !px-3 !py-2 !text-[12px]"
+                    >
+                      <FaEnvelope /> Email
+                    </a>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
