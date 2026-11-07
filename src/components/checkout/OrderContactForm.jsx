@@ -4,6 +4,7 @@ import { useState } from 'react';
 import toast from 'react-hot-toast';
 import {
   FaWhatsapp,
+  FaTelegramPlane,
   FaPaperPlane,
   FaUser,
   FaMapMarkerAlt,
@@ -98,7 +99,7 @@ export default function OrderContactForm({ cart, orderDetails }) {
         setReference(data.reference);
         toast.success(`Order sent — reference ${data.reference}`);
       } catch (err) {
-        toast.error(err.message || 'Could not send your order. Please try WhatsApp instead.');
+        toast.error(err.message || 'Could not send your order. Please try WhatsApp or Telegram instead.');
       } finally {
         setSubmitting(false);
       }
@@ -107,12 +108,20 @@ export default function OrderContactForm({ cart, orderDetails }) {
 
     const message = buildMessage(form, cart, orderDetails);
     const text = encodeURIComponent(message);
+
+    if (method === 'telegram') {
+      const url = `https://t.me/K2solutionpro?text=${text}`;
+      window.open(url, '_blank', 'noopener,noreferrer');
+      return;
+    }
+
     const url = `https://wa.me/${WHATSAPP_NUMBER}?text=${text}`;
     window.open(url, '_blank', 'noopener,noreferrer');
   };
 
   const methodLabels = {
     whatsapp: { title: 'WhatsApp', field: 'WhatsApp number', placeholder: '+1 740-602-7691', Icon: FaWhatsapp, verb: 'WhatsApp' },
+    telegram: { title: 'Telegram', field: 'Telegram username', placeholder: '@K2solutionpro', Icon: FaTelegramPlane, verb: 'Telegram' },
     email: { title: 'Email', Icon: FaEnvelope, verb: 'email' },
   };
   const active = methodLabels[method];

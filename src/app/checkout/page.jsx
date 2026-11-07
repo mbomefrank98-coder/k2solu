@@ -6,7 +6,7 @@ import Link from 'next/link';
 import { useCart } from '@/components/cart/CartProvider';
 import OrderSummary from '@/components/checkout/OrderSummary';
 import OrderContactForm from '@/components/checkout/OrderContactForm';
-import { FaLock, FaBitcoin, FaApplePay } from 'react-icons/fa';
+import { FaLock, FaBitcoin, FaApplePay, FaTelegramPlane } from 'react-icons/fa';
 
 export default function CheckoutPage() {
   const { cart } = useCart();
@@ -78,7 +78,7 @@ export default function CheckoutPage() {
               We accept Bitcoin (BTC) &amp; Apple Pay
             </p>
             <p className="mt-1 text-xs leading-relaxed text-bone-muted">
-              After you send your order on WhatsApp or by email, we&apos;ll reply with payment instructions for your chosen method — BTC wallet address or Apple Pay details.
+              After you send your order on WhatsApp, Telegram, or by email, we&apos;ll reply with payment instructions for your chosen method — BTC wallet address or Apple Pay details.
             </p>
           </div>
         </div>
@@ -108,6 +108,14 @@ export default function CheckoutPage() {
                   className="inline-flex items-center gap-1.5 font-mono text-[11px] uppercase tracking-[0.14em] text-volt transition-colors hover:text-bone"
                 >
                   WhatsApp support &rarr;
+                </a>
+                <a
+                  href="https://t.me/K2solutionpro"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="inline-flex items-center gap-1.5 font-mono text-[11px] uppercase tracking-[0.14em] text-volt transition-colors hover:text-bone"
+                >
+                  <FaTelegramPlane className="h-3 w-3" /> Telegram support &rarr;
                 </a>
                 <a
                   href="mailto:order@k2solutionpro.com?subject=Order%20support"

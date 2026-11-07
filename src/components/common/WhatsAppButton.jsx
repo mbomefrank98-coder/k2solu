@@ -1,6 +1,6 @@
 'use client';
 
-import { FaWhatsapp, FaEnvelope } from 'react-icons/fa';
+import { FaWhatsapp, FaEnvelope, FaTelegramPlane } from 'react-icons/fa';
 import { HiOutlineChatBubbleLeftRight } from 'react-icons/hi2';
 import { useState } from 'react';
 
@@ -10,6 +10,13 @@ const CHANNELS = [
     href: 'https://wa.me/17406027691',
     Icon: FaWhatsapp,
     accent: 'bg-volt text-volt-ink',
+    external: true,
+  },
+  {
+    label: 'Telegram',
+    href: 'https://t.me/K2solutionpro',
+    Icon: FaTelegramPlane,
+    accent: 'bg-sky-500 text-white',
     external: true,
   },
   {
