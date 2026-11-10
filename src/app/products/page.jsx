@@ -11,6 +11,8 @@ const categoryKeywordMap = {
   'k2-powder': 'k2 powder, cannabinoid k2 powder, synthetic cannabinoid powder, buy k2 powder',
   'etomidate': 'etomidate, etomidate powder, etomidate crystal, etomidate for sale, buy etomidate',
   'vapes-kpods': 'etomidate vape, k-pods, etomidate k-pods, vape pods, disposable vape',
+  'benzos': 'benzos, benzodiazepine analogues, buy benzos online',
+  'opioids': 'opioids, opioid reference standards, buy opioids online',
 };
 
 // Dynamic Metadata for SEO - handles query parameters
@@ -174,6 +176,14 @@ const categoryMeta = {
     label: 'Etomidate Vapes / K-Pods',
     desc: 'Pre-filled etomidate vape pods, disposables and starter kits. Medical-grade hardware, sealed for freshness, discreet worldwide shipping.',
   },
+  'benzos': {
+    label: 'Benzos',
+    desc: 'Research-grade benzodiazepine analogues. Purity-verified, batch-coded, discreet worldwide shipping.',
+  },
+  'opioids': {
+    label: 'Opioids',
+    desc: 'Opioid reference compounds for analytical and pharmacology research. Batch-coded, discreet worldwide shipping.',
+  },
 };
 
 export default async function ProductsPage({ searchParams }) {
@@ -227,6 +237,8 @@ export default async function ProductsPage({ searchParams }) {
               { href: '/products?category=k2-powder', label: 'K2 Powder', key: 'k2-powder' },
               { href: '/products?category=etomidate', label: 'Etomidate', key: 'etomidate' },
               { href: '/products?category=vapes-kpods', label: 'Vapes / K-Pods', key: 'vapes-kpods' },
+              { href: '/products?category=benzos', label: 'Benzos', key: 'benzos' },
+              { href: '/products?category=opioids', label: 'Opioids', key: 'opioids' },
             ].map(({ href, label, key }) => {
               const active = label === 'All' ? !selectedCategory : catKey === key;
               return (

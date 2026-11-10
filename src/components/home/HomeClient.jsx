@@ -47,7 +47,7 @@ function SectionHead({ tag, title, text, action, center = false }) {
 const PROMISES = [
   { icon: FiShield, title: 'Discreet by default', text: 'Vacuum-sealed, scent-proof packaging with zero external branding or product references.' },
   { icon: FiPackage, title: 'Tracked worldwide', text: 'Every order ships with tracking. Dispatch within 72 hours of confirmed payment.' },
-  { icon: FiLock, title: 'Bitcoin & Apple Pay', text: 'Pay with BTC confirmed on-chain, or Apple Pay — instructions sent with your order confirmation.' },
+  { icon: FiLock, title: 'Bitcoin (BTC)', text: 'Pay with BTC — instructions sent with your order confirmation.' },
   { icon: FiMessageCircle, title: 'Human support', text: 'WhatsApp and email, seven days a week. Real answers, not ticket queues.' },
 ];
 
@@ -85,6 +85,8 @@ const CATEGORIES = [
   { slug: 'k2-powder', name: 'K2 Powder', desc: 'Pure cannabinoid powder for custom blends.', emoji: '⚗️' },
   { slug: 'etomidate', name: 'Etomidate', desc: 'Research-grade powder & crystal. COA per batch.', emoji: '🔬' },
   { slug: 'vapes-kpods', name: 'Vapes / K-Pods', desc: 'Pre-filled pods and disposables, sealed for freshness.', emoji: '💨' },
+  { slug: 'benzos', name: 'Benzos', desc: 'Research-grade benzodiazepine analogues, purity-verified.', emoji: '💊', span: 'lg:col-span-1' },
+  { slug: 'opioids', name: 'Opioids', desc: 'Opioid reference compounds for analytical research.', emoji: '🔬', span: 'lg:col-span-1' },
 ];
 
 function Categories() {
@@ -172,7 +174,7 @@ function Featured({ products }) {
 const STEPS = [
   { n: '1', title: 'Select', text: 'Browse the catalog, pick your format and quantity. No account required.' },
   { n: '2', title: 'Confirm', text: 'Send your order via WhatsApp or email. We confirm stock and total in minutes.' },
-  { n: '3', title: 'Pay', text: 'Settle with Bitcoin or Apple Pay. Your payment is verified before dispatch.' },
+  { n: '3', title: 'Pay', text: 'Settle with Bitcoin (BTC). Your payment is verified before dispatch.' },
   { n: '4', title: 'Receive', text: 'Sealed, tracked package dispatched within 72 hours. Delivered to your door.' },
 ];
 
@@ -266,7 +268,7 @@ function CTA() {
           <div className="max-w-xl">
             <p className="mb-3 font-mono text-[11px] uppercase tracking-[0.2em] text-volt-ink/70">Ready when you are</p>
             <h2 className="font-display text-3xl font-bold tracking-tight sm:text-5xl">Stock moves fast.<br />Lock yours in today.</h2>
-            <p className="mt-4 text-volt-ink/80">Message us for stock confirmation and payment details — BTC or Apple Pay, replies in minutes, seven days a week.</p>
+            <p className="mt-4 text-volt-ink/80">Message us for stock confirmation and payment details — BTC only, replies in minutes, seven days a week.</p>
           </div>
           <div className="flex flex-wrap gap-3">
             <Link href="/products" className="btn border-night-950 bg-night-950 text-bone hover:bg-night-800">

@@ -6,7 +6,7 @@ import Image from 'next/image';
 import { useRouter } from 'next/navigation';
 import {
   FaTrash, FaArrowLeft, FaLock, FaShoppingCart, FaBitcoin,
-  FaShieldAlt, FaShippingFast, FaMinus, FaPlus, FaWhatsapp, FaEnvelope, FaApplePay,
+  FaShieldAlt, FaShippingFast, FaMinus, FaPlus, FaWhatsapp, FaEnvelope,
 } from 'react-icons/fa';
 import { useCart } from '@/components/cart/CartProvider';
 
@@ -198,7 +198,7 @@ export default function CartPage() {
                     <FaBitcoin className="text-signal" /> BTC
                   </span>
                   <span className="inline-flex items-center gap-1">
-                    <FaApplePay className="text-sm text-bone" /> accepted
+                    <FaBitcoin className="text-sm text-bone" /> accepted
                   </span>
                   <span className="inline-flex items-center gap-1.5">
                     <FaLock className="text-volt" /> Secure

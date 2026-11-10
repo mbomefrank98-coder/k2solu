@@ -6,7 +6,7 @@ import Link from 'next/link';
 import { useCart } from '@/components/cart/CartProvider';
 import OrderSummary from '@/components/checkout/OrderSummary';
 import OrderContactForm from '@/components/checkout/OrderContactForm';
-import { FaLock, FaBitcoin, FaApplePay, FaTelegramPlane } from 'react-icons/fa';
+import { FaLock, FaBitcoin } from 'react-icons/fa';
 
 export default function CheckoutPage() {
   const { cart } = useCart();
@@ -70,15 +70,15 @@ export default function CheckoutPage() {
               <FaBitcoin className="text-2xl text-signal" />
             </div>
             <div className="flex h-12 w-12 items-center justify-center rounded-xl border border-line bg-night-950">
-              <FaApplePay className="text-3xl text-bone" />
+              <FaBitcoin className="text-3xl text-signal" />
             </div>
           </div>
           <div>
             <p className="font-display text-sm font-bold uppercase tracking-wide text-bone">
-              We accept Bitcoin (BTC) &amp; Apple Pay
+              We accept Bitcoin (BTC)
             </p>
             <p className="mt-1 text-xs leading-relaxed text-bone-muted">
-              After you send your order on WhatsApp, Telegram, or by email, we&apos;ll reply with payment instructions for your chosen method — BTC wallet address or Apple Pay details.
+              After you send your order on WhatsApp or by email, we&apos;ll reply with our BTC wallet address for payment.
             </p>
           </div>
         </div>
@@ -108,14 +108,6 @@ export default function CheckoutPage() {
                   className="inline-flex items-center gap-1.5 font-mono text-[11px] uppercase tracking-[0.14em] text-volt transition-colors hover:text-bone"
                 >
                   WhatsApp support &rarr;
-                </a>
-                <a
-                  href="https://t.me/K2solutionpro"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="inline-flex items-center gap-1.5 font-mono text-[11px] uppercase tracking-[0.14em] text-volt transition-colors hover:text-bone"
-                >
-                  <FaTelegramPlane className="h-3 w-3" /> Telegram support &rarr;
                 </a>
                 <a
                   href="mailto:info@k2solutionpro.com?subject=Order%20support"

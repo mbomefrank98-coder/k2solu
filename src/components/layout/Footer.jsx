@@ -16,6 +16,8 @@ const columns = [
       { href: '/products?category=k2-powder', label: 'K2 Powder' },
       { href: '/products?category=etomidate', label: 'Etomidate' },
       { href: '/products?category=vapes-kpods', label: 'Vapes / K-Pods' },
+      { href: '/products?category=benzos', label: 'Benzos' },
+      { href: '/products?category=opioids', label: 'Opioids' },
     ],
   },
   {
@@ -113,7 +115,7 @@ export default function Footer() {
             <ul className="space-y-3 text-sm text-bone-muted">
               <li className="flex items-start gap-2.5"><HiOutlineShieldCheck className="text-volt mt-0.5 shrink-0" size={16} /> Discreet, scent-proof packaging</li>
               <li className="flex items-start gap-2.5"><HiOutlineTruck className="text-volt mt-0.5 shrink-0" size={16} /> Tracked worldwide delivery</li>
-              <li className="flex items-start gap-2.5"><FaBitcoin className="text-signal mt-0.5 shrink-0" size={15} /> Bitcoin (BTC) &amp; Apple Pay</li>
+              <li className="flex items-start gap-2.5"><FaBitcoin className="text-signal mt-0.5 shrink-0" size={15} /> Bitcoin (BTC)</li>
             </ul>
           </div>
         </div>

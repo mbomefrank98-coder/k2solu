@@ -27,7 +27,7 @@ export default function FAQPage() {
     {
       category: 'ordering',
       question: 'What payment methods do you accept?',
-      answer: 'We accept Bitcoin (BTC) and Apple Pay. Contact us on WhatsApp or by email after placing your order and we\'ll send you payment instructions for your chosen method.'
+      answer: 'We accept Bitcoin (BTC). Contact us on WhatsApp or by email after placing your order and we\'ll send you our BTC wallet address.'
     },
     {
       category: 'ordering',

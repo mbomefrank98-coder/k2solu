@@ -317,6 +317,8 @@ export default function ProductList({ initialProducts, selectedCategory }) {
                     <option value="k2-powder">K2 Powder</option>
                     <option value="etomidate">Etomidate</option>
                     <option value="vapes-kpods">Vapes / K-Pods</option>
+                    <option value="benzos">Benzos</option>
+                    <option value="opioids">Opioids</option>
                   </select>
                 </div>
 

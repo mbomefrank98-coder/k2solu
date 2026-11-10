@@ -29,20 +29,34 @@ function buildMessage({ name, contact, address, notes }, cart, orderDetails) {
     .join('\n');
 
   return [
-    'New Order Request',
+    '*K2SolutionPro — New Order Request*',
+    '_k2solutionpro.com_',
     '',
+    '───────────────────',
+    '  CUSTOMER DETAILS',
+    '───────────────────',
     `Name: ${name}`,
     `Contact: ${contact}`,
     `Shipping Address: ${address}`,
     notes ? `Message: ${notes}` : null,
     '',
-    'Order Items:',
+    '───────────────────',
+    '  ORDER ITEMS',
+    '───────────────────',
     itemLines,
     '',
+    '───────────────────',
+    '  ORDER TOTAL',
+    '───────────────────',
     `Subtotal: €${orderDetails.subtotal.toFixed(2)}`,
     `Shipping: €${orderDetails.shipping.toFixed(2)}`,
     `Tax: €${orderDetails.tax.toFixed(2)}`,
-    `Total: €${orderDetails.total.toFixed(2)}`,
+    `*Total: €${orderDetails.total.toFixed(2)}*`,
+    '',
+    '───────────────────',
+    'Payment: Bitcoin (BTC)',
+    'Telegram: t.me/K2solutionpro',
+    'Email: info@k2solutionpro.com',
   ]
     .filter((line) => line !== null)
     .join('\n');
@@ -141,7 +155,7 @@ export default function OrderContactForm({ cart, orderDetails }) {
         <p className="mx-auto mt-4 max-w-md text-sm leading-relaxed text-bone-muted">
           We&apos;ve emailed the order details to our team and sent a confirmation to{' '}
           <span className="text-bone">{form.email}</span>. We&apos;ll reply with payment
-          instructions (BTC or Apple Pay) shortly.
+          instructions (BTC) shortly.
         </p>
         <p className="mt-4 font-mono text-[11px] uppercase tracking-[0.14em] text-bone-faint">
           Check your inbox (and spam) for the confirmation

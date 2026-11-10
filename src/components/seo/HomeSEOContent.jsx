@@ -66,7 +66,7 @@ export default function HomeSEOContent() {
 
         <p className="mt-8 max-w-3xl text-sm leading-relaxed text-bone-faint">
           Trusted by repeat buyers across the US, EU and beyond — discreet packaging,
-          BTC or Apple Pay checkout, and support on WhatsApp and email seven days a week.
+          BTC checkout, and support on WhatsApp and email seven days a week.
           Browse the <Link href="/products" className="text-volt underline underline-offset-4 decoration-volt/40 hover:decoration-volt">full catalog</Link> or read our <Link href="/faq" className="text-volt underline underline-offset-4 decoration-volt/40 hover:decoration-volt">FAQ</Link> for shipping and payment details.
         </p>
       </div>

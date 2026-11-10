@@ -27,6 +27,8 @@ const shopCategories = [
   { href: '/products?category=k2-powder', label: 'K2 Powder', desc: 'Pure cannabinoid powder', emoji: '⚗️' },
   { href: '/products?category=etomidate', label: 'Etomidate', desc: 'Research powders & crystals', emoji: '🔬' },
   { href: '/products?category=vapes-kpods', label: 'Vapes / K-Pods', desc: 'Pre-filled pods & kits', emoji: '💨' },
+  { href: '/products?category=benzos', label: 'Benzos', desc: 'Research-grade benzo analogues', emoji: '💊' },
+  { href: '/products?category=opioids', label: 'Opioids', desc: 'Research-grade opioid reference compounds', emoji: '🔬' },
 ];
 
 export default function Navbar() {
@@ -95,7 +97,7 @@ export default function Navbar() {
         <div className="wrap h-9 flex items-center justify-center gap-3 text-[12px] font-semibold tracking-wide">
           <span className="hidden sm:inline">Discreet worldwide shipping</span>
           <span className="hidden sm:inline opacity-40">•</span>
-          <span>Bitcoin &amp; Apple Pay accepted</span>
+          <span>Bitcoin accepted</span>
           <span className="hidden sm:inline opacity-40">•</span>
           <span className="hidden sm:inline">72h dispatch after confirmation</span>
         </div>

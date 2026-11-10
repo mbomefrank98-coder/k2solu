@@ -95,7 +95,7 @@ export default function TermsPage() {
           <p className="mb-6">Your order is an offer to purchase. We reserve the right to accept or reject any order. Order confirmation does not guarantee acceptance.</p>
           <h3 className="mb-3 font-display text-base font-bold uppercase tracking-wide text-bone">Payment</h3>
           <ul className="space-y-2 ml-1 mb-6">
-            {['Payment must be made at the time of order','We accept Apple Pay, Bitcoin, Ethereum, and other agreed methods','All payments are processed securely','You authorize us to charge your payment method for the total amount','Payment information must be accurate and current'].map(i=><li key={i} className="flex gap-3"><Dot /><span>{i}</span></li>)}
+            {['Payment must be made at the time of order','We accept Bitcoin (BTC) only','All payments are processed securely','You authorize us to charge your payment method for the total amount','Payment information must be accurate and current'].map(i=><li key={i} className="flex gap-3"><Dot /><span>{i}</span></li>)}
           </ul>
           <h3 className="mb-3 font-display text-base font-bold uppercase tracking-wide text-bone">Order Verification</h3>
           <p>We may require additional verification, including proof of identity, research credentials, or institutional affiliation.</p>

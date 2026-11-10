@@ -62,6 +62,8 @@ export default async function sitemap() {
     'k2-powder',
     'etomidate',
     'vapes-kpods',
+    'benzos',
+    'opioids',
   ].map((category) => ({
     url: `${baseUrl}/products?category=${category}`,
     lastModified: new Date(),
