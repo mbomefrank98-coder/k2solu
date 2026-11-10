@@ -15,7 +15,7 @@ import {
 } from 'react-icons/fa';
 
 const WHATSAPP_NUMBER = '17406027691'; // +1 740-602-7691
-const ORDER_EMAIL = 'order@k2solutionpro.com';
+const ORDER_EMAIL = 'info@k2solutionpro.com';
 
 function buildMessage({ name, contact, address, notes }, cart, orderDetails) {
   const itemLines = cart

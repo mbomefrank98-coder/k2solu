@@ -327,7 +327,7 @@ export default function Navbar() {
                 <div className="mt-8 grid grid-cols-2 gap-2">
                   <a href="https://wa.me/17406027691" target="_blank" rel="noopener noreferrer" className="btn-ghost !px-3"><FaWhatsapp /> WhatsApp</a>
                   <a href="https://t.me/K2solutionpro" target="_blank" rel="noopener noreferrer" className="btn-ghost !px-3"><FaTelegramPlane /> Telegram</a>
-                  <a href="mailto:order@k2solutionpro.com?subject=Order%20request" className="btn-ghost !px-3 col-span-2"><HiOutlineEnvelope size={17} /> Email</a>
+                  <a href="mailto:info@k2solutionpro.com?subject=Order%20request" className="btn-ghost !px-3 col-span-2"><HiOutlineEnvelope size={17} /> Email</a>
                 </div>
               </div>
 

@@ -232,7 +232,7 @@ export default function CartPage() {
                       <FaWhatsapp /> WhatsApp
                     </a>
                     <a
-                      href="mailto:order@k2solutionpro.com?subject=Order%20request"
+                      href="mailto:info@k2solutionpro.com?subject=Order%20request"
                       className="btn-ghost !px-3 !py-2 !text-[12px]"
                     >
                       <FaEnvelope /> Email

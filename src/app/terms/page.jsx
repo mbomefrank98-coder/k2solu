@@ -170,7 +170,7 @@ export default function TermsPage() {
 
         <section>
           <h2 className="mb-4 font-display text-2xl font-extrabold tracking-tight text-bone">13. Dispute Resolution</h2>
-          <p className="mb-4">Before filing a claim, you agree to contact us on <a href="https://wa.me/17406027691" target="_blank" rel="noopener noreferrer" className="text-volt hover:underline">WhatsApp</a> or by <a href="mailto:order@k2solutionpro.com" className="text-volt hover:underline">email</a> to attempt to resolve the dispute informally.</p>
+          <p className="mb-4">Before filing a claim, you agree to contact us on <a href="https://wa.me/17406027691" target="_blank" rel="noopener noreferrer" className="text-volt hover:underline">WhatsApp</a> or by <a href="mailto:info@k2solutionpro.com" className="text-volt hover:underline">email</a> to attempt to resolve the dispute informally.</p>
           <p className="mb-4">Disputes that cannot be resolved informally shall be resolved through binding arbitration in accordance with applicable rules.</p>
           <p>You agree to resolve disputes on an individual basis and waive the right to participate in class actions or class arbitrations.</p>
         </section>
@@ -200,7 +200,7 @@ export default function TermsPage() {
           <p className="mb-5">If you have questions about these Terms, please contact us:</p>
           <div className="border border-line rounded-xl p-5 space-y-2 text-sm">
             <p><strong>WhatsApp:</strong> <a href="https://wa.me/17406027691" target="_blank" rel="noopener noreferrer" className="text-volt hover:underline">+1 740-602-7691</a></p>
-            <p><strong>Email:</strong> <a href="mailto:order@k2solutionpro.com" className="text-volt hover:underline">order@k2solutionpro.com</a></p>
+            <p><strong>Email:</strong> <a href="mailto:info@k2solutionpro.com" className="text-volt hover:underline">info@k2solutionpro.com</a></p>
             <p><strong>Response Time:</strong> We aim to respond within 48 hours</p>
           </div>
         </section>

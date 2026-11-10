@@ -21,7 +21,7 @@ const CHANNELS = [
   },
   {
     label: 'Email',
-    href: 'mailto:order@k2solutionpro.com?subject=Order%20request',
+    href: 'mailto:info@k2solutionpro.com?subject=Order%20request',
     Icon: FaEnvelope,
     accent: 'bg-signal text-night-950',
     external: false,

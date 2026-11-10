@@ -155,9 +155,9 @@ export default function Hero() {
                 Chat on WhatsApp
               </a>
               <a
-                href="mailto:order@k2solutionpro.com?subject=Order%20request"
+                href="mailto:info@k2solutionpro.com?subject=Order%20request"
                 aria-label="Email us"
-                title="order@k2solutionpro.com"
+                title="info@k2solutionpro.com"
                 className="grid h-[46px] w-[46px] place-items-center rounded-full border border-line-strong bg-white/[0.03] text-bone transition-colors hover:border-volt/70 hover:text-volt hover:bg-volt/5"
               >
                 <FiMail size={18} />

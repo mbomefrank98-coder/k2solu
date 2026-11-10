@@ -91,7 +91,7 @@ export default function Footer() {
             <div className="mt-6 flex gap-2">
               <a href="https://wa.me/17406027691" target="_blank" rel="noopener noreferrer" aria-label="WhatsApp" className="h-10 w-10 grid place-items-center rounded-full border border-line text-bone-muted hover:text-volt hover:border-volt/60 transition-colors"><FaWhatsapp size={17} /></a>
               <a href="https://t.me/K2solutionpro" target="_blank" rel="noopener noreferrer" aria-label="Telegram" className="h-10 w-10 grid place-items-center rounded-full border border-line text-bone-muted hover:text-volt hover:border-volt/60 transition-colors"><FaTelegramPlane size={17} /></a>
-              <a href="mailto:order@k2solutionpro.com?subject=Order%20request" aria-label="Email" className="h-10 w-10 grid place-items-center rounded-full border border-line text-bone-muted hover:text-volt hover:border-volt/60 transition-colors"><HiOutlineEnvelope size={17} /></a>
+              <a href="mailto:info@k2solutionpro.com?subject=Order%20request" aria-label="Email" className="h-10 w-10 grid place-items-center rounded-full border border-line text-bone-muted hover:text-volt hover:border-volt/60 transition-colors"><HiOutlineEnvelope size={17} /></a>
             </div>
           </div>
 

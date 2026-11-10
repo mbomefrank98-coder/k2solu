@@ -118,10 +118,10 @@ export default function CheckoutPage() {
                   <FaTelegramPlane className="h-3 w-3" /> Telegram support &rarr;
                 </a>
                 <a
-                  href="mailto:order@k2solutionpro.com?subject=Order%20support"
+                  href="mailto:info@k2solutionpro.com?subject=Order%20support"
                   className="inline-flex items-center gap-1.5 font-mono text-[11px] uppercase tracking-[0.14em] text-volt transition-colors hover:text-bone"
                 >
-                  order@k2solutionpro.com &rarr;
+                  info@k2solutionpro.com &rarr;
                 </a>
               </div>
             </div>

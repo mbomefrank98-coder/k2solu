@@ -78,7 +78,7 @@ export const getOrganizationSchema = () => ({
   contactPoint: {
     '@type': 'ContactPoint',
     contactType: 'customer support',
-    email: 'order@k2solutionpro.com',
+    email: 'info@k2solutionpro.com',
     availableLanguage: 'English',
   },
   sameAs: [],

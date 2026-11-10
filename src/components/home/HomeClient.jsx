@@ -275,7 +275,7 @@ function CTA() {
             <a href="https://wa.me/17406027691" target="_blank" rel="noopener noreferrer" className="btn border-volt-ink/30 bg-white/15 text-volt-ink hover:bg-white/25">
               <FaWhatsapp /> WhatsApp
             </a>
-            <a href="mailto:order@k2solutionpro.com?subject=Order%20request" className="btn border-volt-ink/30 bg-white/15 text-volt-ink hover:bg-white/25">
+            <a href="mailto:info@k2solutionpro.com?subject=Order%20request" className="btn border-volt-ink/30 bg-white/15 text-volt-ink hover:bg-white/25">
               <HiOutlineEnvelope size={17} /> Email
             </a>
           </div>

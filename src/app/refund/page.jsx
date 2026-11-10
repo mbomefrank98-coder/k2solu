@@ -266,7 +266,7 @@ export default function RefundPolicyPage() {
                 <li key={item} className="flex gap-2"><span className="w-1 h-1 rounded-full bg-signal shrink-0 mt-2" />{item}</li>
               ))}
             </ul>
-            <p className="font-bold">Please contact us first on <a href="https://wa.me/17406027691" target="_blank" rel="noopener noreferrer" className="text-volt hover:underline">WhatsApp</a> or by <a href="mailto:order@k2solutionpro.com" className="text-volt hover:underline">email</a>.</p>
+            <p className="font-bold">Please contact us first on <a href="https://wa.me/17406027691" target="_blank" rel="noopener noreferrer" className="text-volt hover:underline">WhatsApp</a> or by <a href="mailto:info@k2solutionpro.com" className="text-volt hover:underline">email</a>.</p>
           </div>
         </section>
 
@@ -276,7 +276,7 @@ export default function RefundPolicyPage() {
           <p className="mb-5">Have questions or need to start a return?</p>
           <div className="border border-line rounded-xl p-5 space-y-2 text-sm mb-6">
             <p><strong>WhatsApp:</strong> <a href="https://wa.me/17406027691" target="_blank" rel="noopener noreferrer" className="text-volt hover:underline">+1 740-602-7691</a></p>
-            <p><strong>Email:</strong> <a href="mailto:order@k2solutionpro.com" className="text-volt hover:underline">order@k2solutionpro.com</a></p>
+            <p><strong>Email:</strong> <a href="mailto:info@k2solutionpro.com" className="text-volt hover:underline">info@k2solutionpro.com</a></p>
             <p><strong>Subject Line:</strong> Return Request - Order #[Your Order Number]</p>
             <p><strong>Response Time:</strong> Within 24 hours</p>
           </div>

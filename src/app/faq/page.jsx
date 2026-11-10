@@ -319,7 +319,7 @@ export default function FAQPage() {
             <a href="https://wa.me/17406027691" target="_blank" rel="noopener noreferrer" className="btn-volt">
               <FaWhatsapp className="h-4 w-4" /> WhatsApp us
             </a>
-            <a href="mailto:order@k2solutionpro.com" className="btn-ghost">
+            <a href="mailto:info@k2solutionpro.com" className="btn-ghost">
               <FaEnvelope className="h-3.5 w-3.5" /> Email us
             </a>
           </div>
