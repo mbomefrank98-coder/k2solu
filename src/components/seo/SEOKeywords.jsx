@@ -21,7 +21,7 @@ export const allKeywords = [...primaryKeywords, ...secondaryKeywords];
 
 // Schema.org structured data for better SEO
 export const getProductSchema = (product) => {
-  const BASE_URL = process.env.NEXT_PUBLIC_BASE_URL || 'https://k2solutionpro.com';
+  const BASE_URL = process.env.NEXT_PUBLIC_BASE_URL || 'https://www.k2solutionpro.com';
   const absoluteUrl = (path) => {
     if (!path) return `${BASE_URL}/images/logo.png`;
     return path.startsWith('http') ? path : `${BASE_URL}${path}`;
@@ -61,7 +61,7 @@ export const getProductSchema = (product) => {
 
 // Get base URL for schemas
 const getBaseUrl = () => {
-  return process.env.NEXT_PUBLIC_BASE_URL || 'https://k2solutionpro.com';
+  return process.env.NEXT_PUBLIC_BASE_URL || 'https://www.k2solutionpro.com';
 };
 
 // Organization schema

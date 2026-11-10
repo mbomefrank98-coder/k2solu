@@ -18,7 +18,7 @@ export async function generateMetadata({ searchParams }) {
   const params = await searchParams;
   const category = params?.category || '';
   
-  const baseUrl = process.env.NEXT_PUBLIC_BASE_URL || 'https://k2solutionpro.com';
+  const baseUrl = process.env.NEXT_PUBLIC_BASE_URL || 'https://www.k2solutionpro.com';
   const catKey = category.toLowerCase();
   const catLabel = categoryMeta[catKey]?.label || category;
   const canonicalPath = catKey

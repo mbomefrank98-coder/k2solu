@@ -71,7 +71,7 @@ export async function generateMetadata({ params }) {
     return { title: 'Product Not Found' };
   }
 
-  const baseUrl = process.env.NEXT_PUBLIC_BASE_URL || 'https://k2solutionpro.com';
+  const baseUrl = process.env.NEXT_PUBLIC_BASE_URL || 'https://www.k2solutionpro.com';
   const absoluteImage = product.images?.[0]?.startsWith('http')
     ? product.images[0]
     : `${baseUrl}${product.images?.[0] || '/images/logo.png'}`;

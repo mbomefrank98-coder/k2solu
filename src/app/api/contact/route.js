@@ -232,8 +232,8 @@ Reply directly to this email to respond to ${name}.
       <p><strong>K2SolutionPro</strong> - K2 Paper, Spray & Powder</p>
       <p>This email was sent from your website contact form</p>
       <p style="margin-top: 10px;">
-        <a href="https://k2solutionpro.com" style="color: #dc2626; text-decoration: none;">Visit Website</a> |
-        <a href="https://k2solutionpro.com/admin" style="color: #dc2626; text-decoration: none;">Admin Dashboard</a>
+        <a href="https://www.k2solutionpro.com" style="color: #dc2626; text-decoration: none;">Visit Website</a> |
+        <a href="https://www.k2solutionpro.com/admin" style="color: #dc2626; text-decoration: none;">Admin Dashboard</a>
       </p>
     </div>
   </div>
@@ -274,7 +274,7 @@ The K2SolutionPro Team
 
 ---
 K2SolutionPro - K2 Paper, Spray & Powder
-Website: https://k2solutionpro.com
+Website: https://www.k2solutionpro.com
           `,
           html: `
 <!DOCTYPE html>
@@ -473,9 +473,9 @@ Website: https://k2solutionpro.com
       <p style="margin-top: 10px;">This is an automated confirmation email.</p>
       
       <div class="footer-links">
-        <a href="https://k2solutionpro.com">Visit Website</a> |
-        <a href="https://k2solutionpro.com/products">Browse Products</a> |
-        <a href="https://k2solutionpro.com/about">About Us</a>
+        <a href="https://www.k2solutionpro.com">Visit Website</a> |
+        <a href="https://www.k2solutionpro.com/products">Browse Products</a> |
+        <a href="https://www.k2solutionpro.com/about">About Us</a>
       </div>
 
       <p style="margin-top: 15px; font-size: 11px; color: #999;">

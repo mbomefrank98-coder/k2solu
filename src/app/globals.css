@@ -247,3 +247,21 @@ input::placeholder, textarea::placeholder { color: #6e8396; }
     @apply absolute rounded-full border border-volt/20;
   }
 }
+
+/* Tawk.to chat widget — pin to bottom-left */
+iframe[title*="chat widget" i],
+iframe[title*="tawk" i],
+.tawk-min-container,
+.tawk-max-container,
+div[class^="widget-visible"] iframe {
+  left: 1.25rem !important;
+  right: auto !important;
+}
+@media (min-width: 640px) {
+  iframe[title*="chat widget" i],
+  iframe[title*="tawk" i],
+  .tawk-min-container,
+  .tawk-max-container {
+    left: 2rem !important;
+  }
+}

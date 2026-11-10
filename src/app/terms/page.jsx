@@ -1,7 +1,7 @@
 import Link from 'next/link';
 
 export const metadata = {
-  metadataBase: new URL(process.env.NEXT_PUBLIC_BASE_URL || 'https://k2solutionpro.com'),
+  metadataBase: new URL(process.env.NEXT_PUBLIC_BASE_URL || 'https://www.k2solutionpro.com'),
   title: 'Terms & Conditions',
   description: 'Read the K2SolutionPro Terms and Conditions. Learn our policies for purchasing K2 paper sheets, K2 liquid spray, cannabinoid K2 powder and etomidate.',
   keywords: [

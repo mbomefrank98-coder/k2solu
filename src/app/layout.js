@@ -1,4 +1,5 @@
 import "./globals.css";
+import Script from "next/script";
 import { Toaster } from "react-hot-toast";
 
 // Components
@@ -12,7 +13,7 @@ import WhatsAppButton from "@/components/common/WhatsAppButton";
 import AuthProvider from "@/components/auth/AuthProvider";
 import CartProvider from "@/components/cart/CartProvider";
 
-const BASE_URL = process.env.NEXT_PUBLIC_BASE_URL || 'https://k2solutionpro.com';
+const BASE_URL = process.env.NEXT_PUBLIC_BASE_URL || 'https://www.k2solutionpro.com';
 
 export const metadata = {
   metadataBase: new URL(BASE_URL),
@@ -125,6 +126,20 @@ export default function RootLayout({ children }) {
             </ConditionalNavbar>
           </CartProvider>
         </AuthProvider>
+        <Script id="tawk-to" strategy="afterInteractive">
+          {`
+            var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
+            Tawk_API.customStyle = { visibility: { desktop: { position: 'bl', xOffset: 24, yOffset: 24 }, mobile: { position: 'bl', xOffset: 16, yOffset: 16 } } };
+            (function(){
+            var s1=document.createElement("script"),s0=document.getElementsByTagName("script")[0];
+            s1.async=true;
+            s1.src='https://embed.tawk.to/6af2d6ca83ad0c3c3fd2e21c/1k729e2b7';
+            s1.charset='UTF-8';
+            s1.setAttribute('crossorigin','*');
+            s0.parentNode.insertBefore(s1,s0);
+            })();
+          `}
+        </Script>
       </body>
     </html>
   );

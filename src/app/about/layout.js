@@ -1,5 +1,5 @@
 export const metadata = {
-  metadataBase: new URL(process.env.NEXT_PUBLIC_BASE_URL || 'https://k2solutionpro.com'),
+  metadataBase: new URL(process.env.NEXT_PUBLIC_BASE_URL || 'https://www.k2solutionpro.com'),
   title: 'About Us | Trusted K2, Etomidate & K-Pod Supplier',
   description: 'Learn about K2SolutionPro — a trusted supplier of K2 paper sheets, K2 liquid spray, cannabinoid K2 powder, research-grade etomidate and K-Pods with discreet worldwide shipping.',
   keywords: [
